@@ -2,8 +2,7 @@
 @import '../ui/scss/_functions.scss';
 
 :root {
-	@include getColors(#D21C4B, "primary");
-	@include getColors(#CE9B44, "sec");
+	@include getColors(#1A1A1A, "primary");
 	@include getColors(#0092E4, "blue");
 	@include getColors(#FF9820, "yellow");
 	@include getColors(#31A043, "green");
@@ -12,7 +11,7 @@
 	@include getColors(#333333, "text");
 
 	--bg1: #E9EAEC;
-	--bg2: #F4F5F6;
+	--bg2: #F4F4F4;
 	--bg3: #FFFFFF;
 
 	--spacing: 4px;
@@ -25,7 +24,7 @@
 	--media-md: #{$md};
 	--media-sm: #{$sm};
 
-	--font-base: 'Roboto', Arial, Helvetica, sans-serif;
+	--font-base: 'SF Pro Display', Arial, Helvetica, sans-serif;
 
 	--zi-l1: 321;
 	--zi-l2: 322;
@@ -51,9 +50,11 @@ body {
 	min-height    : 100vh;
 	display       : flex;
 	flex-direction: column;
+	background    : var(--bg2);
 
 	* {
-		font-family: var(--font-base);
+		font-family                : var(--font-base);
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
 }
@@ -71,5 +72,137 @@ body {
 
 	.active-enabled {
 		display: flex !important;
+	}
+}
+
+
+
+.header {
+	display        : flex;
+	align-items    : center;
+	justify-content: space-between;
+	height         : 86px;
+	background     : var(--bg3);
+	z-index        : var(--zi-l1);
+
+	@media(max-width:$md) {
+		height: 65px;
+	}
+
+	@media(max-width:$sm) {
+		height: 45px;
+	}
+
+	&-logo {
+		width: 166px;
+
+		@media(max-width:$lg) {
+			margin-right: auto;
+		}
+
+		@media(max-width:$md) {
+			width: 124px;
+		}
+
+		@media(max-width:$sm) {
+			width: 94px;
+		}
+
+
+		img {
+			width     : 100%;
+			object-fit: contain;
+		}
+	}
+
+	&-contact {
+		@media(max-width:$sm) {
+			display: none;
+		}
+	}
+}
+
+.started {
+	display    : flex;
+	align-items: center;
+	height     : 650px;
+	position   : relative;
+
+	@media(max-width:$sm) {
+		height: 450px;
+	}
+
+	&__img {
+		position: absolute;
+		inset   : 0;
+
+		img {
+			width     : 100%;
+			height    : 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__shadow {
+		position: absolute;
+		inset   : 0;
+
+		background: linear-gradient(102.83deg, rgba(0, 0, 0, 0.8) 22.4%, rgba(0, 0, 0, 0) 59.28%);
+
+		@media(max-width:$lg) {
+			background: linear-gradient(332.71deg, rgba(0, 0, 0, 0) 20.86%, rgba(0, 0, 0, 0.9) 58.69%);
+			opacity   : 0.9;
+		}
+	}
+
+	&__content {
+		position : relative;
+		z-index  : 2;
+		color    : #FFFFFF;
+		max-width: 100%;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size  : 42px;
+		line-height: 120%;
+
+
+		@media(max-width:$sm) {
+			font-size: 28px;
+		}
+	}
+
+	&__subtitle {
+		font-size  : 24px;
+		line-height: 1;
+
+		@media(max-width:$sm) {
+			font-size: 18px;
+		}
+	}
+
+	&__description {
+		font-size  : 20px;
+		line-height: 120%;
+
+		@media(max-width:$sm) {
+			font-size: 16px;
+		}
+	}
+
+	&__separator {
+		width    : 506px;
+		max-width: 100%;
+		height   : 2px;
+
+		opacity: 0.2;
+		border : 1px dashed #FFFFFF;
+		margin : 32px 0;
+
+		@media(max-width:$sm) {
+			margin: 24px 0;
+			width : 100%;
+		}
 	}
 }

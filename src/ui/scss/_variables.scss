@@ -1,4 +1,7 @@
 // out: false
-$sm   : 425.98px;
-$md   : 679.98px;
-$lg   : 1053.98px;
+$container_md: 700px;
+$container_lg: 1170px;
+
+$sm   : 525.98px;
+$md   : $container_md + 29.98px;
+$lg   : $container_lg + 29.98px;
