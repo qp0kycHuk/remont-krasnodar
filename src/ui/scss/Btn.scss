@@ -213,3 +213,14 @@
 	}
 
 }
+
+.btn--fill{
+	.ripple {
+		background: radial-gradient(rgba(255, 255, 255, 0.1) 0,
+				rgba(255, 255, 255, 0.1) 40%,
+				rgba(255, 255, 255, 0.1) calc(60% - 10px),
+				rgba(255, 255, 255, 0.1) 60%,
+				rgba(255, 255, 255, 0) calc(60% + 10px));
+
+	}
+}

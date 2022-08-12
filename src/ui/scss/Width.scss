@@ -8,14 +8,18 @@
     width: 50%;
   }
 
+  &-75 {
+    width: 75%;
+  }
+
   &-auto {
     width: auto !important;
   }
 }
 
 .w {
-	@include AddMedia {
-		@include Width;
-	}
+  @include AddMedia {
+    @include Width;
+  }
 
 }

@@ -8,7 +8,7 @@
 	@include getColors(#31A043, "green");
 	@include getColors(#EB5757, "red");
 	@include getColors(#828A99, "icon");
-	@include getColors(#333333, "text");
+	@include getColors(#1A1A1A, "text");
 
 	--bg1: #E9EAEC;
 	--bg2: #F4F4F4;
@@ -16,9 +16,9 @@
 
 	--spacing: 4px;
 
-	--radius-small : 4px;
-	--radius-middle: 8px;
-	--radius-large : 12px;
+	--radius-small : 6px;
+	--radius-middle: 12px;
+	--radius-large : 24px;
 
 	--media-lg: #{$lg};
 	--media-md: #{$md};
@@ -127,6 +127,7 @@ body {
 	align-items: center;
 	height     : 650px;
 	position   : relative;
+	background : rgba(0, 0, 0, 0.6);
 
 	@media(max-width:$sm) {
 		height: 450px;
@@ -204,5 +205,255 @@ body {
 			margin: 24px 0;
 			width : 100%;
 		}
+	}
+}
+
+.section {
+	padding-top   : 32px;
+	padding-bottom: 32px;
+
+	@media (max-width:$md) {
+		padding-top   : 18px;
+		padding-bottom: 18px;
+	}
+
+	&--first {
+		padding-top: 64px;
+
+		@media (max-width:$md) {
+			padding-top: 36px;
+		}
+	}
+
+	&--last {
+		padding-bottom: 64px;
+
+		@media (max-width:$md) {
+			padding-bottom: 36px;
+		}
+	}
+}
+
+.qwiz {
+
+	&-block {
+		background      : #FFFFFF;
+		border-radius   : 12px;
+		// padding      : 16px;
+
+
+		display              : grid;
+		grid-template-columns: 1fr 528px;
+
+		@media (max-width:$lg) {
+			display       : flex;
+			flex-direction: column;
+
+		}
+	}
+
+
+	&-content {
+		width   : 100%;
+		overflow: hidden;
+		padding : 30px 38px;
+
+		@media (max-width:$lg) {
+			padding: 20px;
+
+		}
+
+		@media (max-width:$sm) {
+			padding: 0;
+		}
+
+		.swiper {
+			// height : 100%;
+			padding: 10px;
+
+			@media (max-width:$sm) {
+				padding: 30px 16px 24px;
+			}
+		}
+
+		.swiper-slide {
+			@media (max-width:$lg) {
+				align-self: flex-start;
+			}
+		}
+	}
+
+	&-form {
+		display       : flex;
+		flex-direction: column;
+		align-items   : flex-start;
+		height        : auto;
+
+		&__title {
+			font-weight  : bold;
+			font-size    : 36px;
+			margin-bottom: 36px;
+		}
+
+		&__desc {
+			font-size    : 16px;
+			margin-bottom: 32px;
+		}
+
+		&__fields {
+			width        : 100%;
+			margin-bottom: 32px;
+
+		}
+
+		&-checkbox {
+			padding        : 16px;
+			background     : var(--bg2);
+			border-radius  : 12px;
+			font-weight    : normal;
+			justify-content: flex-start;
+			height         : auto;
+
+			@media (max-width:$sm) {
+				padding  : 14px 16px;
+				font-size: 14px;
+			}
+
+			@media(hover) {
+				&:hover {
+					background: linear-gradient(rgba(53, 53, 53, 0.025), rgba(53, 53, 53, 0.025)), var(--bg2);
+
+				}
+			}
+		}
+
+		&--callback &__title {
+			margin-bottom: 18px;
+		}
+
+		&--callback &__fields {
+			width        : 320px;
+			max-width    : 100%;
+			margin-bottom: 32px;
+		}
+
+
+
+		&__btns {
+			display   : flex;
+			margin-top: auto;
+		}
+
+		&__agree {
+			font-size : 10px;
+			margin-top: 10px;
+			color     : rgba(32, 32, 32, 0.8);
+		}
+
+
+		&__input-wrap {
+			padding      : 12px 8px;
+			background   : rgba(240, 240, 240, 0.5);
+			border       : 1px solid rgba(16, 16, 16, 0.1);
+			border-radius: 4px;
+		}
+	}
+
+
+	&-img {
+		padding     : 16px;
+		padding-left: 0;
+
+		@media (max-width:$sm) {
+			display: none;
+		}
+
+		@media (max-width:$lg) {
+			order         : -1;
+			padding       : 16px;
+			padding-bottom: 0;
+		}
+
+		&__item {
+			border-radius: 12px;
+			overflow     : hidden;
+
+			@media (max-width:$lg) {
+				max-height: 300px;
+			}
+
+			&:before {
+				padding-bottom: calc(100% * 460 / 512);
+			}
+
+			img {
+				object-fit: cover;
+			}
+		}
+
+		&__text {
+			position     : absolute;
+			left         : 26px;
+			bottom       : 26px;
+			right        : 26px;
+			background   : rgba(25, 118, 210, 0.2);
+			border       : 1px solid #1976D2;
+			border-radius: 4px;
+
+			font-weight   : 600;
+			font-size     : 20px;
+			color         : #fff;
+			padding-top   : 12px;
+			padding-bottom: 12px;
+			text-align    : center;
+
+			transition: .8s .2s ease;
+			transform : translateY(15px);
+
+			&:before {
+				content : '';
+				position: absolute;
+				left    : -3px;
+				top     : -3px;
+				bottom  : -3px;
+				right   : -3px;
+
+				border       : inherit;
+				border-radius: inherit;
+			}
+		}
+
+		&__item.swiper-slide-visible &__text {
+			transform: none;
+		}
+	}
+
+	&-next {
+		.icon {
+			margin-left: 10px;
+		}
+	}
+
+	&.stopped &-next {
+		opacity       : .4;
+		cursor        : default;
+		pointer-events: none;
+		disabled      : true
+	}
+
+	&-prev {
+		padding: 0;
+		width  : 52px;
+
+		.icon {
+			transform: scaleX(-1);
+			margin   : 0;
+		}
+	}
+
+
+
+	&:not(.condition-steering) .condition-steering {
+		display: none;
 	}
 }

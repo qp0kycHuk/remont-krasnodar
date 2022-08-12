@@ -2,74 +2,489 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Worked</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Worked</title>
+
+	<script>
+		const MEDIA_SM = 525.98;
+		const MEDIA_MD = 749.98;
+		const MEDIA_LG = 1199.98;
+	</script>
 </head>
 
 <body>
-  <header class="header">
-    <button class="header-btn btn btn-xsmall btn-icon btn--primary d-sm-none mr-4">
-      <svg class="icon text-subtitle-2">
-        <use xlink:href="img/icons.svg#menu" />
-      </svg>
-    </button>
-    <button class="header-logo btn btn--link">
-      <img src="img/logo.svg" alt="">
-    </button>
-    <a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
-      <button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
-        <svg class="icon text-subtitle-1">
-          <use xlink:href="img/icons.svg#email" />
-        </svg>
-      </button>
-      <div class="d-none d-lg-block">
-        <div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
-        <div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
-      </div>
-    </a>
-    <a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
-      <button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
-        <svg class="icon text-subtitle-1">
-          <use xlink:href="img/icons.svg#phone" />
-        </svg>
-      </button>
-      <div class="d-none d-lg-block">
-        <div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
-        <div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
-      </div>
-    </a>
-    <button class="header-btn btn btn-xsmall btn-icon btn--primary btn--contur d-sm-none">
-      <svg class="icon text-body-1">
-        <use xlink:href="img/icons.svg#phone" />
-      </svg>
-    </button>
-    <button class="header-btn btn btn-small btn--primary btn--contur d-none d-sm-flex">Заказать звонок</button>
-  </header>
+	<header class="header">
+		<button class="header-btn btn btn-xsmall btn-icon btn--primary d-sm-none mr-4">
+			<svg class="icon text-subtitle-2">
+				<use xlink:href="img/icons.svg#menu" />
+			</svg>
+		</button>
+		<button class="header-logo btn btn--link">
+			<img src="img/logo.svg" alt="">
+		</button>
+		<a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
+			<button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
+				<svg class="icon text-subtitle-1">
+					<use xlink:href="img/icons.svg#email" />
+				</svg>
+			</button>
+			<div class="d-none d-lg-block">
+				<div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
+				<div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
+			</div>
+		</a>
+		<a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
+			<button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
+				<svg class="icon text-subtitle-1">
+					<use xlink:href="img/icons.svg#phone" />
+				</svg>
+			</button>
+			<div class="d-none d-lg-block">
+				<div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
+				<div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
+			</div>
+		</a>
+		<button class="header-btn btn btn-xsmall btn-icon btn--primary btn--contur d-sm-none">
+			<svg class="icon text-body-1">
+				<use xlink:href="img/icons.svg#phone" />
+			</svg>
+		</button>
+		<button class="header-btn btn btn-small btn--primary btn--contur d-none d-sm-flex">Заказать звонок</button>
+	</header>
 
-  <section class="started">
-    <div class="started__img">
-      <img src="img/background/started.jpg" alt="">
-    </div>
-    <div class="started__shadow"></div>
-    <div class="started__content">
-      <div class="started__title mb-3 mb-sm-5">
-        Ремонт квартир <br>
-        под ключ в Краснодаре
-      </div>
-      <div class="started__subtitle">с поэтапной оплатой, без предоплат</div>
-      <div class="started__separator"></div>
-      <div class="started__description">
-        Успейте <img src="img/icons/fire.png" alt="" class="d-inline"> до 31 июля получить скидку 20% <br>
-        До конца акции осталось: 5 дней!
-      </div>
-      <button class="started__btn btn btn--primary btn--white-bg mt-8">Получить бесплатный расчет</button>
-    </div>
+	<section class="started">
+		<div class="started__img">
+			<img src="img/background/started.jpg" alt="">
+		</div>
+		<div class="started__shadow"></div>
+		<div class="started__content">
+			<div class="started__title mb-3 mb-sm-5">
+				Ремонт квартир <br>
+				под ключ в Краснодаре
+			</div>
+			<div class="started__subtitle">с поэтапной оплатой, без предоплат</div>
+			<div class="started__separator"></div>
+			<div class="started__description">
+				Успейте <img src="img/icons/fire.png" alt="" class="d-inline"> до 31 июля получить скидку 20% <br>
+				До конца акции осталось: 5 дней!
+			</div>
+			<button class="started__btn btn btn--primary btn--white-bg mt-8">Получить бесплатный расчет</button>
+		</div>
 
-  </section>
+	</section>
 
-  <footer class="footer"> </footer>
+	<section class="qwiz section section--first">
+		<div class="text-h4 text-md-h1 mb-1">Получите бесплатный рассчет</div>
+		<div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10">Просто ответье на 8 простых вопросов</div>
+
+		<div class="qwiz-block  wow fadeIn">
+			<form class="qwiz-content">
+				<input type="hidden" name="form-name" value="Квиз">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide qwiz-form" data-qwiz-slide>
+							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+								Где будем делать ремонт?
+							</div>
+							<div class="qwiz-form__fields">
+
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Квартира </div>
+								</label>
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Дом </div>
+								</label>
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Коммерция </div>
+								</label>
+
+							</div>
+							<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill  mt-auto">
+								Следующий
+								<svg class="icon btn__end">
+									<use xlink:href="img/icons.svg#arrow-right" />
+								</svg>
+							</button>
+						</div>
+						<div class="swiper-slide qwiz-form" data-qwiz-slide>
+							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+								Состояние объекта
+							</div>
+							<div class="qwiz-form__fields">
+
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Новостройка </div>
+								</label>
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Вторичка </div>
+								</label>
+
+							</div>
+							<div class="flex mt-auto">
+								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+									<svg class="icon ">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+									Следующий
+									<svg class="icon ml-3">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+							</div>
+
+						</div>
+						<div class="swiper-slide qwiz-form" data-qwiz-slide>
+							<div class="text-subtitle-1 text-md-h4 mb-5">
+								Нужна ли дополнительная
+								комплектация объекта:
+							</div>
+							<div class="qwiz-form__fields">
+								<div class="grid">
+									<div class="grid-col-sm-6">
+										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ml-3"> Сантехника </div>
+										</label>
+									</div>
+									<div class="grid-col-sm-6">
+										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ml-3"> Установка дверей </div>
+										</label>
+									</div>
+									<div class="grid-col-sm-6">
+										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ml-3"> Электрика </div>
+										</label>
+									</div>
+									<div class="grid-col-sm-6">
+										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ml-3"> Изготовление кухни </div>
+										</label>
+									</div>
+									<div class="grid-col-sm-6">
+										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ml-3"> Установка системы <br> "Теплый пол" </div>
+										</label>
+									</div>
+									<div class="grid-col-sm-6">
+										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ml-3"> Меблирование </div>
+										</label>
+									</div>
+									<div class="grid-col-sm-6">
+										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ml-3"> Замена окон </div>
+										</label>
+									</div>
+								</div>
+
+
+
+							</div>
+							<div class="flex mt-auto">
+								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+									<svg class="icon ">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+									Следующий
+									<svg class="icon ml-3">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+							</div>
+
+						</div>
+						<div class="swiper-slide qwiz-form" data-qwiz-slide>
+							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+								Укажите площадь объекта
+							</div>
+							<div class="qwiz-form__fields">
+								<label class="form-field swiper-no-swiping w-sm-75">
+									<div class="text--demibold mb-3">Площадь объекта, м2</div>
+									<div class="form-input-cover">
+										<input type="number" class="form-input" placeholder="Введите цифру...">
+									</div>
+								</label>
+
+							</div>
+							<div class="flex mt-auto">
+								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+									<svg class="icon ">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+									Следующий
+									<svg class="icon ml-3">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+							</div>
+
+						</div>
+						<div class="swiper-slide qwiz-form" data-qwiz-slide>
+							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+								Когда готовы приступить к ремонту
+							</div>
+							<div class="qwiz-form__fields">
+
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Как можно скорее </div>
+								</label>
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> В течение месяца </div>
+								</label>
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Через 2-3 месяца </div>
+								</label>
+								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="ml-3"> Только прицениваюсь </div>
+								</label>
+
+							</div>
+							<div class="flex mt-auto">
+								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+									<svg class="icon ">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+									Следующий
+									<svg class="icon ml-3">
+										<use xlink:href="img/icons.svg#arrow-right" />
+									</svg>
+								</button>
+							</div>
+
+						</div>
+						<div class="swiper-slide qwiz-form" data-qwiz-slide>
+							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+								Последний шаг
+							</div>
+							<div class="qwiz-form__fields">
+								<label class="form-field swiper-no-swiping w-sm-75 mb-4">
+									<div class="text--demibold mb-3">Имя</div>
+									<div class="form-input-cover">
+										<input type="text" class="form-input" placeholder="">
+									</div>
+								</label>
+								<label class="form-field swiper-no-swiping w-sm-75">
+									<div class="text--demibold mb-3">Номер телефона</div>
+									<div class="form-input-cover">
+										<input type="tel" class="form-input" placeholder="">
+									</div>
+								</label>
+
+							</div>
+							<div class="flex mt-auto">
+								<button type="button" class="btn btn--primary btn--fill">
+									Получить рассчет
+								</button>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</form>
+			<div class="qwiz-img">
+				<div class="swiper" dir="rtl">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+							<div class="progress progress-circle fade-60"></div>
+							<picture>
+								<img data-src="img/qwiz/1.jpg" alt="" class="swiper-lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+							<div class="progress progress-circle fade-60"></div>
+							<picture>
+								<img data-src="img/qwiz/2.jpg" alt="" class="swiper-lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+							<div class="progress progress-circle fade-60"></div>
+							<picture>
+								<img data-src="img/qwiz/3.jpg" alt="" class="swiper-lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+							<div class="progress progress-circle fade-60"></div>
+							<picture>
+								<img data-src="img/qwiz/4.jpg" alt="" class="swiper-lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+							<div class="progress progress-circle fade-60"></div>
+							<picture>
+								<img data-src="img/qwiz/5.jpg" alt="" class="swiper-lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+							<div class="progress progress-circle fade-60"></div>
+							<picture>
+								<img data-src="img/qwiz/6.jpg" alt="" class="swiper-lazy">
+							</picture>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		(() => {
+			const qwizFormSwiper = new Swiper('.qwiz-content .swiper', {
+				slidesPerView: 1,
+				touchRatio: 0,
+				spaceBetween: 20,
+				watchSlidesProgress: true,
+				watchSlidesVisibility: true,
+				navigation: {
+					prevEl: '.qwiz-prev',
+					nextEl: '.qwiz-next'
+				},
+				autoHeight: true,
+				breakpoints: {
+					[MEDIA_LG]: {
+						autoHeight: false
+					}
+				}
+			});
+			const qwizImgSwiper = new Swiper('.qwiz-img .swiper', {
+				slidesPerView: 1,
+				lazy: {
+					loadPrevNext: true,
+					loadPrevNextAmount: 1
+				},
+				spaceBetween: 20,
+				touchRatio: 0,
+				watchSlidesProgress: true,
+				watchSlidesVisibility: true,
+				effect: 'creative',
+				creativeEffect: {
+					prev: {
+						// will set `translateZ(-400px)` on previous slides
+						translate: [0, 0, -400],
+					},
+					next: {
+						// will set `translateX(100%)` on next slides
+						translate: ['100%', 0, 0],
+					},
+				},
+				navigation: {
+					prevEl: '.qwiz-prev',
+					nextEl: '.qwiz-next'
+				},
+
+
+			});
+		})();
+
+	</script>
+
+	<footer class="footer"> </footer>
 </body>
 
 </html>

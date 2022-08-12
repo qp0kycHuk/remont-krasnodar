@@ -27,7 +27,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 q {
-    quotes: "\201c" "\201d";
+    quotes: "\201c""\201d";
 }
 
 body p:empty,
@@ -40,7 +40,8 @@ body h6:empty,
 body li:empty {
     display: none;
 }
-*{
+
+* {
     color: inherit;
 }
 
@@ -60,7 +61,7 @@ body *::before {
     border       : none;
     border-radius: 0;
     box-sizing   : border-box;
-    outline: none;
+    outline      : none;
 }
 
 sup {
@@ -83,7 +84,7 @@ label,
 button,
 select,
 input[type=submit] {
-    cursor: pointer;
+    cursor   : pointer;
     font-size: inherit;
 }
 
@@ -108,7 +109,7 @@ img[src="/"] {
 
 img {
     max-width  : 100%;
-    object-fit: scale-down;
+    object-fit : scale-down;
     display    : block;
     user-select: none;
 }
@@ -145,4 +146,8 @@ dialog {
 dialog::backdrop {
     background: none;
     display   : none;
+}
+
+picture {
+    position: static !important;
 }
