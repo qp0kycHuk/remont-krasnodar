@@ -91,8 +91,8 @@ body {
 	height         : 86px;
 	background     : var(--bg3);
 	z-index        : var(--zi-l1);
-	position: sticky;
-	top     : 0;
+	position       : sticky;
+	top            : 0;
 
 	&-inner {
 		display        : flex;
@@ -106,8 +106,8 @@ body {
 	}
 
 	@media(max-width:$sm) {
-		height  : 45px;
-		z-index : var(--zi-l1);
+		height : 45px;
+		z-index: var(--zi-l1);
 	}
 
 	&-logo {
@@ -138,7 +138,7 @@ body {
 		}
 	}
 
-	
+
 	&-icon {
 		position : absolute;
 		transform: rotate(27deg);
@@ -153,6 +153,7 @@ body {
 	height     : 650px;
 	position   : relative;
 	background : rgba(0, 0, 0, 0.6);
+	overflow   : hidden;
 
 	@media(max-width:$sm) {
 		height: 450px;
@@ -233,17 +234,27 @@ body {
 		}
 	}
 
-	
+
 	&__lights {
 		position      : absolute;
-		top           : 0;
+		top           : 100%;
 		left          : 0;
 		width         : 100%;
 		pointer-events: none;
+		object-fit    : cover;
+		display       : block;
+		overflow      : hidden;
 
-		@media(max-width: $md) {
-			min-width: 600px;
+		img {
+			object-fit: cover;
+			height    : 60px;
+			display   : block;
+
+			@media(max-width: $md) {
+				height: 40px;
+			}
 		}
+
 	}
 }
 
@@ -531,19 +542,19 @@ body {
 	&-pagination {
 		display    : flex;
 		align-items: center;
-		position: relative;
-		transform: none !important;
-		top: auto !important;
-		bottom: auto !important;
-		left: auto !important;
+		position   : relative;
+		transform  : none !important;
+		top        : auto !important;
+		bottom     : auto !important;
+		left       : auto !important;
 
 
 		.swiper-pagination-bullet {
-			min-width        : 10px;
+			min-width    : 10px;
 			width        : 10px;
 			height       : 10px;
 			border-radius: 50%;
-			background: var(--color-primary);
+			background   : var(--color-primary);
 			cursor       : pointer;
 			position     : relative;
 
@@ -559,7 +570,7 @@ body {
 			// margin-left: 16px;
 		}
 
-		&.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+		&.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
 			// position: absolute;
 			// top: 0;
 			// left: 0 !important;
@@ -1105,6 +1116,7 @@ body {
 	padding-top    : 30px;
 	padding-bottom : 30px;
 	background     : var(--bg3);
+	position       : relative;
 
 	@media (max-width:$lg) {
 		display              : grid;
@@ -1337,10 +1349,10 @@ body {
 }
 
 .text-clipped {
-	width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	width        : 100%;
+	overflow     : hidden;
+	white-space  : nowrap;
+	text-overflow: ellipsis;
 }
 
 // gsap init
