@@ -133,6 +133,13 @@ body {
 			display: none;
 		}
 	}
+
+	&-icon {
+		position : absolute;
+		transform: rotate(27deg);
+		top      : -20px;
+		right    : -15px;
+	}
 }
 
 .started {
@@ -140,6 +147,7 @@ body {
 	align-items: center;
 	height     : 650px;
 	position   : relative;
+	overflow   : hidden;
 	background : rgba(0, 0, 0, 0.6);
 
 	@media(max-width:$sm) {
@@ -167,6 +175,18 @@ body {
 		@media(max-width:$lg) {
 			background: linear-gradient(332.71deg, rgba(0, 0, 0, 0) 20.86%, rgba(0, 0, 0, 0.9) 58.69%);
 			opacity   : 0.9;
+		}
+	}
+
+	&__lights {
+		position      : absolute;
+		top           : 0;
+		left          : 0;
+		width         : 100%;
+		pointer-events: none;
+
+		@media(max-width: $md) {
+			min-width: 600px;
 		}
 	}
 
@@ -1073,6 +1093,7 @@ body {
 	padding-top    : 30px;
 	padding-bottom : 30px;
 	background     : var(--bg3);
+	position       : relative;
 
 	@media (max-width:$lg) {
 		display              : grid;
@@ -1084,6 +1105,20 @@ body {
 		grid-template-columns: 1fr;
 	}
 
+	&__lights {
+		position: absolute;
+		top     : -20px;
+		left    : 0;
+		width   : 100%;
+
+		@media(max-width: $lg) {
+			top: -10px;
+		}
+
+		@media(max-width: $md) {
+			display: none;
+		}
+	}
 
 	&-logo {
 		width: 166px;
