@@ -1,0 +1,139 @@
+<div class="dialog-work card mx-auto">
+	<div class="work-detail">
+		<div class="work-detail-gallery">
+			<div class="work-detail-gallery-top ">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a data-fancybox="work-item-dialog" href="https://youtu.be/YAmkIt70RtU"
+								class="work-item__preview image image--rect bg-l1 progress-container image-action waved">
+								<div class="progress progress-circle fade-60"></div>
+								<img src="https://picsum.photos/600/400?random=710" alt="">
+								<div class="card-center-control">
+									<button class="btn btn--primary btn--white-bg btn-fab work-item__preview-play">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#play" />
+										</svg>
+									</button>
+								</div>
+							</a>
+
+						</div>
+
+						<div class="swiper-slide">
+							<a data-fancybox="work-item-dialog" href="https://picsum.photos/1920/1080?random=71"
+								class="work-item__preview image image--rect bg-l1 progress-container image-action waved">
+								<div class="progress progress-circle fade-60"></div>
+								<img data-src="https://picsum.photos/600/400?random=71" alt="" class="swiper-lazy">
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="work-detail-gallery-thumbs">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="work-item__thumb image image--rect bg-l1 progress-container image-action waved">
+								<div class="progress progress-circle fade-60 text-small"></div>
+								<img src="https://picsum.photos/600/400?random=710" alt="">
+								<div class="card-center-control">
+									<button class="btn btn--primary btn--white-bg btn-fab work-item__thumb-play">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#play" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="work-item__thumb image image--rect bg-l1 progress-container image-action waved">
+								<div class="progress progress-circle fade-60 text-small">
+								</div>
+								<img src="https://picsum.photos/600/400?random=71" alt="">
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-prev ">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-left" />
+					</svg>
+				</button>
+				<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-next ">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-right" />
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="work-detail-content">
+			<div class="text-md-h4 mb-2 text-subtitle-2">Косметический ремонт квартиры</div>
+			<div class="flex text-small text-md-body-2 mb-6">
+				<div>ул. Конгрессная 12</div>
+				<div class="ml-5">
+					<span class="fade-60">Площадь:</span> 102 м2
+				</div>
+				<div class="ml-5">
+					<span class="fade-60">Срок: </span> 4 мес
+				</div>
+			</div>
+			<div class="text-body-2 fade-80">
+				Современный и доступный ремонт квартиры. В отделке использованы современные, но
+				при
+				этом не дорогие
+				материалы и решения: натяжные потолки, декоративная штукатурка, гипсовые панели,
+				ламинат,
+				отечественная керамическая плитка.
+			</div>
+			<button class="work-item__btn btn btn--primary btn--fill px-md-10 mt-7 mt-md-10" data-fancybox-modal
+				data-src="dialog-form.html" data-type="ajax">Заказать ремонт</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	(() => {
+		const thumbs = new Swiper('.work-detail-gallery-thumbs .swiper', {
+			slidesPerView: 4,
+			spaceBetween: 12,
+			watchSlidesProgress: true,
+			watchSlidesVisibility: true,
+			navigation:{
+				prevEl:'.work-detail-gallery-thumbs .slider-prev',
+				nextEl:'.work-detail-gallery-thumbs .slider-next',
+			},
+			breakpoints: {
+				[MEDIA_SM]: {
+					spaceBetween: 20,
+					slidesPerView: 5,
+				},
+				[MEDIA_MD]: {
+					spaceBetween: 20,
+				}
+			}
+		});
+		new Swiper('.work-detail-gallery-top .swiper', {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			watchSlidesProgress: true,
+			watchSlidesVisibility: true,
+			effect: 'creative',
+			thumbs: {
+				swiper: thumbs
+			},
+			lazy: {
+				loadPrevNext: true,
+				loadPrevNextAmount: 1
+			},
+			creativeEffect: {
+				prev: { translate: [0, 0, -400], },
+				next: { translate: ['110%', 0, 0], },
+			},
+		})
+	})()
+
+</script>

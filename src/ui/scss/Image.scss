@@ -91,6 +91,7 @@
 			transform : rotate(45deg);
 			background: linear-gradient(to top, transparent, #fff 15%, rgba(#fff, .5));
 			transition: .3s;
+			pointer-events: none;
 		}
 
 		img {

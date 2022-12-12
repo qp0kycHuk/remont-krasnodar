@@ -6,10 +6,6 @@
   .fancybox__slide {
     padding: 15px;
 
-    @media(max-width:$sm) {
-      padding: 0;
-
-    }
   }
 
   .fancybox__content,

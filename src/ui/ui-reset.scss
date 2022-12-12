@@ -60,7 +60,7 @@ body *::before {
     padding      : 0;
     border       : none;
     border-radius: 0;
-    box-sizing   : border-box;
+    box-sizing   : border-box !important;
     outline      : none;
 }
 
