@@ -86,7 +86,9 @@ body {
 	justify-content: space-between;
 	height         : 86px;
 	background     : var(--bg3);
-	z-index        : var(--zi-l1);
+	z-index        : var(--zi-l3);
+	position: sticky;
+	top: 0;
 
 	&-inner {
 		display        : flex;
