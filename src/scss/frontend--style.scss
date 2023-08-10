@@ -856,6 +856,11 @@ body {
 			padding-bottom: calc(100% * 300 / 250);
 		}
 	}
+
+	&__thumb-play {
+		--size: 64px;
+		font-size: 26px;
+	}
 }
 
 .citchen-item {
@@ -1436,5 +1441,20 @@ body.loaded .loader {
 	30%,
 	100% {
 		transform: translateX(100%);
+	}
+}
+
+
+.dialog-policy {
+	padding  : 40px;
+	width    : 1000px;
+	max-width: 100%;
+
+	@media(max-width:$sm) {
+		padding: 40px 15px;
+	}
+
+	&-text {
+		line-height: 1.5;
 	}
 }
