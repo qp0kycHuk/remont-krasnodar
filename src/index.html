@@ -2,1300 +2,1281 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Worked</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked</title>
 
-	<script>
-		const MEDIA_SM = 525.98;
-		const MEDIA_MD = 749.98;
-		const MEDIA_LG = 1199.98;
-	</script>
+  <script>
+    const MEDIA_SM = 525.98;
+    const MEDIA_MD = 749.98;
+    const MEDIA_LG = 1199.98;
+  </script>
 </head>
 
 <body>
 
-	<div class="loader progress-container">
-		<div class="progress progress-circle "></div>
-	</div>
-
-
-	<div class="menu -menu-" id="menu">
-		<div class="menu-header">
-			<button class="header-btn btn btn-xsmall btn-icon btn--primary d-sm-none mr-4" data-toggle-link="menu">
-				<svg class="icon text-subtitle-2">
-					<use xlink:href="img/icons.svg#cross" />
-				</svg>
-			</button>
-			<button class="header-logo btn btn--link">
-				<img src="img/logo.svg" alt="">
-			</button>
-		</div>
-		<div class="menu-content">
-			<div class="py-5 pb-3">
-				<a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
-					Портфолио
-				</a>
-				<a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
-					Мебелирование
-				</a>
-				<a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
-					Акции и скидки
-				</a>
-				<a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
-					О нас
-				</a>
-				<a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
-					Контакты
-				</a>
-
-
-			</div>
-			<div class="px-4 mt-1 mt-auto">
-				<button class="btn btn--primary btn--fill w-100 text-body-2 text--demibold">Получить бесплатный рассчет</button>
-				<button class="btn btn--primary btn--contur mt-4 w-100 text-body-2 text--demibold">Заказать звонок</button>
-			</div>
-			<div class="mt-10 px-4">
-				<a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper">
-					<button class="btn btn-small btn--primary btn-icon mr-2">
-						<svg class="icon text-subtitle-1">
-							<use xlink:href="img/icons.svg#email" />
-						</svg>
-					</button>
-					<div class="">
-						<div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
-						<div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
-					</div>
-				</a>
-				<a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper mt-4">
-					<button class="btn btn-small btn--primary btn-icon  mr-2">
-						<svg class="icon text-subtitle-1">
-							<use xlink:href="img/icons.svg#phone" />
-						</svg>
-					</button>
-					<div class="">
-						<div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
-						<div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="menu-shadow" id="menu-shadow"></div>
-
-	<header class="header">
-		<div class="header-inner gsap-scroll" data-animation="fadeInDown">
-
-			<button class="header-btn btn btn-xsmall btn-icon btn--primary d-sm-none mr-4" data-toggle-link="menu">
-				<svg class="icon text-subtitle-2">
-					<use xlink:href="img/icons.svg#menu" />
-				</svg>
-			</button>
-			<button class="header-logo btn btn--link">
-				<img src="img/logo.svg" alt="">
-			</button>
-			<a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
-				<button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
-					<svg class="icon text-subtitle-1">
-						<use xlink:href="img/icons.svg#email" />
-					</svg>
-					<img class="header-icon icon text-h2" src="img/new-year/colpak.svg" alt="">
-				</button>
-				<div class="d-none d-lg-block">
-					<div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
-					<div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
-				</div>
-			</a>
-			<a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
-				<button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
-					<svg class="icon text-subtitle-1">
-						<use xlink:href="img/icons.svg#phone" />
-					</svg>
-					<img class="header-icon icon text-h2" src="img/new-year/colpak.svg" alt="">
-				</button>
-				<div class="d-none d-lg-block">
-					<div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
-					<div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
-				</div>
-			</a>
-			<button class="header-btn btn btn-xsmall btn-icon btn--primary btn--contur d-sm-none">
-				<svg class="icon text-body-1">
-					<use xlink:href="img/icons.svg#phone" />
-				</svg>
-			</button>
-			<button class="header-btn btn btn-small btn--primary btn--contur d-none d-sm-flex" data-fancybox-modal
-				data-src="dialog-form.html" data-type="ajax">Заказать звонок</button>
-		</div>
-		<div class="started__lights">
-			<img src="img/new-year/header-lights.svg">
-		</div>
-	</header>
-
-	<section class="started">
-		<div class="started__img">
-			<img src="img/background/started.jpg" alt="" class="gsap-scroll" data-animation="scaleIn" data-duration="2">
-		</div>
-		<div class="started__shadow"></div>
-		<div class="started__content">
-			<div class="started__title mb-3 mb-sm-5">
-				<div class="gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="0.6">Ремонт квартир</div>
-				<div class="gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="0.7">
-					под ключ в Краснодаре
-				</div>
-			</div>
-			<div class="started__subtitle gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="1">с
-				поэтапной оплатой, без предоплат</div>
-			<div class="started__separator gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="1"></div>
-			<div class="started__description gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="1.2">
-				Успейте <img src="img/icons/fire.png" alt="" class="d-inline"> до 31 июля получить скидку 20% <br>
-				До конца акции осталось: 5 дней!
-			</div>
-			<div class="mt-8 gsap-scroll" data-animation="fadeInUp" data-duration="0.5" data-delay="1.4">
-				<button class="started__btn btn btn--primary btn--white-bg">Получить бесплатный расчет</button>
-			</div>
-		</div>
-
-	</section>
-
-	<!-- Получите бесплатный рассчет -->
-	<section class="qwiz section section--first">
-		<div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
-			Получите бесплатный рассчет</div>
-		<div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp"
-			data-duration="0.6" data-delay="0.8">Просто ответье на 8 простых вопросов</div>
-
-		<div class="qwiz-block gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay="0.6">
-			<form class="qwiz-content">
-				<input type="hidden" name="form-name" value="Квиз">
-				<div class="swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide qwiz-form" data-qwiz-slide>
-							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
-								Где будем делать ремонт?
-							</div>
-							<div class="qwiz-form__fields">
-
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Квартира </div>
-								</label>
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Дом </div>
-								</label>
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Коммерция </div>
-								</label>
-
-							</div>
-							<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill  mt-auto">
-								Следующий
-								<svg class="icon btn__end">
-									<use xlink:href="img/icons.svg#arrow-right" />
-								</svg>
-							</button>
-						</div>
-						<div class="swiper-slide qwiz-form" data-qwiz-slide>
-							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
-								Состояние объекта
-							</div>
-							<div class="qwiz-form__fields">
-
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Новостройка </div>
-								</label>
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Вторичка </div>
-								</label>
-
-							</div>
-							<div class="flex mt-auto">
-								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
-									<svg class="icon ">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
-									Следующий
-									<svg class="icon ml-3">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-							</div>
-
-						</div>
-						<div class="swiper-slide qwiz-form" data-qwiz-slide>
-							<div class="text-subtitle-1 text-md-h4 mb-5">
-								Нужна ли дополнительная
-								комплектация объекта:
-							</div>
-							<div class="qwiz-form__fields">
-								<div class="grid">
-									<div class="grid-col-sm-6">
-										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
-											<input type="checkbox" class="form-input-checkbox">
-											<div class="form-checkbox-target">
-												<svg class="icon">
-													<use xlink:href="./img/icons.svg#gal-ochka" />
-												</svg>
-											</div>
-											<div class="ml-3"> Сантехника </div>
-										</label>
-									</div>
-									<div class="grid-col-sm-6">
-										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
-											<input type="checkbox" class="form-input-checkbox">
-											<div class="form-checkbox-target">
-												<svg class="icon">
-													<use xlink:href="./img/icons.svg#gal-ochka" />
-												</svg>
-											</div>
-											<div class="ml-3"> Установка дверей </div>
-										</label>
-									</div>
-									<div class="grid-col-sm-6">
-										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
-											<input type="checkbox" class="form-input-checkbox">
-											<div class="form-checkbox-target">
-												<svg class="icon">
-													<use xlink:href="./img/icons.svg#gal-ochka" />
-												</svg>
-											</div>
-											<div class="ml-3"> Электрика </div>
-										</label>
-									</div>
-									<div class="grid-col-sm-6">
-										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
-											<input type="checkbox" class="form-input-checkbox">
-											<div class="form-checkbox-target">
-												<svg class="icon">
-													<use xlink:href="./img/icons.svg#gal-ochka" />
-												</svg>
-											</div>
-											<div class="ml-3"> Изготовление кухни </div>
-										</label>
-									</div>
-									<div class="grid-col-sm-6">
-										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
-											<input type="checkbox" class="form-input-checkbox">
-											<div class="form-checkbox-target">
-												<svg class="icon">
-													<use xlink:href="./img/icons.svg#gal-ochka" />
-												</svg>
-											</div>
-											<div class="ml-3"> Установка системы <br> "Теплый пол" </div>
-										</label>
-									</div>
-									<div class="grid-col-sm-6">
-										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
-											<input type="checkbox" class="form-input-checkbox">
-											<div class="form-checkbox-target">
-												<svg class="icon">
-													<use xlink:href="./img/icons.svg#gal-ochka" />
-												</svg>
-											</div>
-											<div class="ml-3"> Меблирование </div>
-										</label>
-									</div>
-									<div class="grid-col-sm-6">
-										<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
-											<input type="checkbox" class="form-input-checkbox">
-											<div class="form-checkbox-target">
-												<svg class="icon">
-													<use xlink:href="./img/icons.svg#gal-ochka" />
-												</svg>
-											</div>
-											<div class="ml-3"> Замена окон </div>
-										</label>
-									</div>
-								</div>
-
-
-
-							</div>
-							<div class="flex mt-auto">
-								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
-									<svg class="icon ">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
-									Следующий
-									<svg class="icon ml-3">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-							</div>
-
-						</div>
-						<div class="swiper-slide qwiz-form" data-qwiz-slide>
-							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
-								Укажите площадь объекта
-							</div>
-							<div class="qwiz-form__fields">
-								<label class="form-field swiper-no-swiping w-sm-75">
-									<div class="text--demibold mb-3">Площадь объекта, м2</div>
-									<div class="form-input-cover">
-										<input type="number" class="form-input" placeholder="Введите цифру...">
-									</div>
-								</label>
-
-							</div>
-							<div class="flex mt-auto">
-								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
-									<svg class="icon ">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
-									Следующий
-									<svg class="icon ml-3">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-							</div>
-
-						</div>
-						<div class="swiper-slide qwiz-form" data-qwiz-slide>
-							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
-								Когда готовы приступить к ремонту
-							</div>
-							<div class="qwiz-form__fields">
-
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Как можно скорее </div>
-								</label>
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> В течение месяца </div>
-								</label>
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Через 2-3 месяца </div>
-								</label>
-								<label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
-									<input type="checkbox" class="form-input-checkbox">
-									<div class="form-checkbox-target">
-										<svg class="icon">
-											<use xlink:href="./img/icons.svg#gal-ochka" />
-										</svg>
-									</div>
-									<div class="ml-3"> Только прицениваюсь </div>
-								</label>
-
-							</div>
-							<div class="flex mt-auto">
-								<button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
-									<svg class="icon ">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-								<button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
-									Следующий
-									<svg class="icon ml-3">
-										<use xlink:href="img/icons.svg#arrow-right" />
-									</svg>
-								</button>
-							</div>
-
-						</div>
-						<div class="swiper-slide qwiz-form" data-qwiz-slide>
-							<div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
-								Последний шаг
-							</div>
-							<div class="qwiz-form__fields">
-								<label class="form-field swiper-no-swiping w-sm-75 mb-4">
-									<div class="text--demibold mb-3">Имя</div>
-									<div class="form-input-cover">
-										<input type="text" class="form-input" placeholder="">
-									</div>
-								</label>
-								<label class="form-field swiper-no-swiping w-sm-75">
-									<div class="text--demibold mb-3">Номер телефона</div>
-									<div class="form-input-cover">
-										<input type="tel" class="form-input" placeholder="">
-									</div>
-								</label>
-
-							</div>
-							<div class="flex mt-auto">
-								<button type="button" class="btn btn--primary btn--fill">
-									Получить рассчет
-								</button>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</form>
-			<div class="qwiz-img">
-				<div class="swiper" dir="rtl">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
-							<div class="progress progress-circle fade-60"></div>
-							<picture>
-								<img data-src="img/qwiz/1.jpg" alt="" class="swiper-lazy">
-							</picture>
-						</div>
-						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
-							<div class="progress progress-circle fade-60"></div>
-							<picture>
-								<img data-src="img/qwiz/2.jpg" alt="" class="swiper-lazy">
-							</picture>
-						</div>
-						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
-							<div class="progress progress-circle fade-60"></div>
-							<picture>
-								<img data-src="img/qwiz/3.jpg" alt="" class="swiper-lazy">
-							</picture>
-						</div>
-						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
-							<div class="progress progress-circle fade-60"></div>
-							<picture>
-								<img data-src="img/qwiz/4.jpg" alt="" class="swiper-lazy">
-							</picture>
-						</div>
-						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
-							<div class="progress progress-circle fade-60"></div>
-							<picture>
-								<img data-src="img/qwiz/5.jpg" alt="" class="swiper-lazy">
-							</picture>
-						</div>
-						<div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
-							<div class="progress progress-circle fade-60"></div>
-							<picture>
-								<img data-src="img/qwiz/6.jpg" alt="" class="swiper-lazy">
-							</picture>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script>
-		(() => {
-			const qwizFormSwiper = new Swiper('.qwiz-content .swiper', {
-				slidesPerView: 1,
-				touchRatio: 0,
-				spaceBetween: 20,
-				watchSlidesProgress: true,
-				watchSlidesVisibility: true,
-				navigation: {
-					prevEl: '.qwiz-prev',
-					nextEl: '.qwiz-next'
-				},
-				autoHeight: true,
-				breakpoints: {
-					[MEDIA_LG]: {
-						autoHeight: false
-					}
-				}
-			});
-			const qwizImgSwiper = new Swiper('.qwiz-img .swiper', {
-				slidesPerView: 1,
-				lazy: {
-					loadPrevNext: true,
-					loadPrevNextAmount: 1
-				},
-				spaceBetween: 20,
-				touchRatio: 0,
-				watchSlidesProgress: true,
-				watchSlidesVisibility: true,
-				effect: 'creative',
-				creativeEffect: {
-					prev: {
-						// will set `translateZ(-400px)` on previous slides
-						translate: [0, 0, -400],
-					},
-					next: {
-						// will set `translateX(100%)` on next slides
-						translate: ['100%', 0, 0],
-					},
-				},
-				navigation: {
-					prevEl: '.qwiz-prev',
-					nextEl: '.qwiz-next'
-				},
-
-
-			});
-		})();
-
-	</script>
-	<!-- /Получите бесплатный рассчет -->
-
-	<!-- Примеры работ -->
-	<section class="section example">
-		<div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
-			Примеры работ</div>
-		<div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp"
-			data-duration="0.6" data-delay="0.8">Ознакомьтесь с нашими флагманскими проектами</div>
-
-		<div class="example-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6"
-			data-delay=".5">
-			<div class="swiper example-slider-swiper">
-				<div class="swiper-wrapper">
-					<% for(let j=0; j < 3; j++){ %>
-						<div class="swiper-slide example-slide">
-							<div class="work-item card">
-								<div class="work-item__previews example-no-swiping">
-									<div class="swiper">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<a data-fancybox="work-item-<%= j %>" href="https://youtu.be/YAmkIt70RtU"
-													class="work-item__preview image image--rect bg-l1 progress-container image-action waved">
-													<div class="progress progress-circle fade-60"></div>
-													<img src="https://picsum.photos/600/400?random=<%= j %>10" alt="">
-													<div class="card-center-control">
-														<button class="btn btn--primary btn--white-bg btn-fab work-item__preview-play">
-															<svg class="icon">
-																<use xlink:href="img/icons.svg#play" />
-															</svg>
-														</button>
-													</div>
-												</a>
-
-											</div>
-											<% for(let i=0; i < 3; i++){ %>
-												<div class="swiper-slide">
-													<a data-fancybox="work-item-<%= j %>"
-														href="https://picsum.photos/1920/1080?random=<%= j %><%= i %>"
-														class="work-item__preview image image--rect bg-l1 progress-container image-action waved">
-														<div class="progress progress-circle fade-60"></div>
-														<img data-src="https://picsum.photos/600/400?random=<%= j %><%= i %>" alt=""
-															class="swiper-lazy">
-													</a>
-												</div>
-												<% } %>
-										</div>
-									</div>
-								</div>
-
-								<div class="work-item__content">
-									<div class="text-md-h4 mb-2 text-subtitle-2">Косметический ремонт квартиры</div>
-									<div class="flex text-small text-md-body-2 mb-6">
-										<div>ул. Конгрессная 12</div>
-										<div class="ml-5">
-											<span class="fade-60">Площадь:</span> 102 м2
-										</div>
-										<div class="ml-5">
-											<span class="fade-60">Срок: </span> 4 мес
-										</div>
-									</div>
-									<div class="text-body-2 fade-80">
-										Современный и доступный ремонт квартиры. В отделке использованы современные, но
-										при
-										этом не дорогие
-										материалы и решения: натяжные потолки, декоративная штукатурка, гипсовые панели,
-										ламинат,
-										отечественная керамическая плитка.
-									</div>
-									<div class="work-item__thumbs mt-5 mt-lg-9 mb-5 mb-lg-0 example-no-swiping">
-										<div class="swiper">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide">
-													<div class="work-item__thumb image image--rect bg-l1 progress-container image-action waved">
-														<div class="progress progress-circle fade-60 text-small"></div>
-														<img src="https://picsum.photos/600/400?random=<%= j %>10" alt="">
-														<div class="card-center-control">
-															<button class="btn btn--primary btn--white-bg btn-fab work-item__thumb-play">
-																<svg class="icon">
-																	<use xlink:href="img/icons.svg#play" />
-																</svg>
-															</button>
-														</div>
-													</div>
-												</div>
-												<% for(let i=0; i < 3; i++){ %>
-													<div class="swiper-slide">
-														<div class="work-item__thumb image image--rect bg-l1 progress-container image-action waved">
-															<div class="progress progress-circle fade-60 text-small">
-															</div>
-															<img src="https://picsum.photos/600/400?random=<%= j %><%= i %>" alt="">
-														</div>
-													</div>
-													<% } %>
-											</div>
-										</div>
-									</div>
-									<button class="work-item__btn btn btn--primary btn--fill px-md-10 mt-7 mt-md-10 example-no-swiping"
-										data-fancybox-modal data-src="dialog-work.html" data-type="ajax">Подробнее</button>
-								</div>
-							</div>
-						</div>
-						<% } %>
-				</div>
-
-			</div>
-			<div class="example-slider-nav">
-				<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-prev example-prev">
-					<svg class="icon">
-						<use xlink:href="img/icons.svg#to-left" />
-					</svg>
-				</button>
-				<div class="slider-pagination mx-auto "></div>
-				<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-next example-next">
-					<svg class="icon">
-						<use xlink:href="img/icons.svg#to-right" />
-					</svg>
-				</button>
-			</div>
-
-
-		</div>
-	</section>
-
-	<script>
-		const example = new Swiper('.example-slider-swiper', {
-			slidesPerView: 1,
-			spaceBetween: 20,
-			watchSlidesProgress: true,
-			watchSlidesVisibility: true,
-			// slideClass: 'example-slide',
-			noSwipingClass: 'example-no-swiping',
-			effect: 'creative',
-			speed: 500,
-			// loop: true,
-			creativeEffect: {
-				prev: { translate: [0, 0, -400], },
-				next: { translate: ['110%', 0, 0], },
-			},
-			navigation: {
-				prevEl: '.example-prev',
-				nextEl: '.example-next',
-			},
-			pagination: {
-				el: '.example-slider .slider-pagination',
-				clickable: true,
-			}
-		});
-
-		const items = document.querySelectorAll('.example .work-item')
-		items.forEach(element => {
-			const thumbs = new Swiper(element.querySelector('.work-item__thumbs .swiper'), {
-				slidesPerView: 4,
-				spaceBetween: 12,
-				watchSlidesProgress: true,
-				watchSlidesVisibility: true,
-				breakpoints: {
-					[MEDIA_MD]: {
-						spaceBetween: 20,
-					}
-				}
-			});
-			const slider = new Swiper(element.querySelector('.work-item__previews .swiper'), {
-				slidesPerView: 1,
-				lazy: {
-					loadPrevNext: true,
-					loadPrevNextAmount: 1
-				},
-				spaceBetween: 20,
-				// touchRatio: 0,
-				watchSlidesProgress: true,
-				watchSlidesVisibility: true,
-				effect: 'creative',
-				thumbs: {
-					swiper: thumbs
-				},
-				creativeEffect: {
-					prev: { translate: [0, 0, -400], },
-					next: { translate: ['110%', 0, 0], },
-				},
-			});
-
-
-
-		});
-
-
-
-
-	</script>
-	<!-- /Примеры работ -->
-
-	<!-- Наше портфолио -->
-	<section class="section protfolio" data-tab-cover>
-		<div class="text-h4 text-md-h1 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6"
-			data-delay="0.6">Наше портфолио</div>
-		<div class="tabs mb-7 mb-md-10 gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
-			<button class="tabs-item" data-tab-link="protfolio-0">Все работы </button>
-			<button class="tabs-item" data-tab-link="protfolio-1" data-cat="1room">Однокомнатные </button>
-			<button class="tabs-item" data-tab-link="protfolio-2" data-cat="2room">Двухкомнатные </button>
-			<button class="tabs-item" data-tab-link="protfolio-3" data-cat="3room">Трехкомнатные </button>
-			<button class="tabs-item" data-tab-link="protfolio-4" data-cat="house">Дома и коттеджи </button>
-			<button class="tabs-item" data-tab-link="protfolio-5" data-cat="commercial">Коммерческие помещения</button>
-			<div class="tabs-plate" data-tab-plate></div>
-		</div>
-		<div class="protfolio-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6"
-			data-delay=".5">
-			<div class="swiper">
-				<div class="swiper-wrapper">
-					<% for(let j=0; j < 8; j++){ %>
-						<div class="swiper-slide -cat-item-" data-cat="1room">
-							<a href="https://picsum.photos/1920/1080?random=3<%= j %>1" data-fancybox="protfolio"
-								class="protfolio-item">
-								<div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
-									<div class="progress progress-circle fade-60 text-body-1"></div>
-									<img src="https://picsum.photos/600/400?random=3<%= j %>1" alt="">
-								</div>
-								<div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
-								<div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
-							</a>
-						</div>
-						<div class="swiper-slide -cat-item-" data-cat="2room">
-							<a href="https://picsum.photos/1920/1080?random=3<%= j %>2" data-fancybox="protfolio"
-								class="protfolio-item">
-								<div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
-									<div class="progress progress-circle fade-60 text-body-1"></div>
-									<img src="https://picsum.photos/600/400?random=3<%= j %>2" alt="">
-								</div>
-								<div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
-								<div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
-							</a>
-						</div>
-						<div class="swiper-slide -cat-item-" data-cat="house">
-							<a href="https://picsum.photos/1920/1080?random=3<%= j %>3" data-fancybox="protfolio"
-								class="protfolio-item">
-								<div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
-									<div class="progress progress-circle fade-60 text-body-1"></div>
-									<img src="https://picsum.photos/600/400?random=3<%= j %>3" alt="">
-								</div>
-								<div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
-								<div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
-							</a>
-						</div>
-						<% } %>
-				</div>
-			</div>
-			<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-prev d-none d-md-flex">
-				<svg class="icon">
-					<use xlink:href="img/icons.svg#to-left" />
-				</svg>
-			</button>
-			<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-next d-none d-md-flex">
-				<svg class="icon">
-					<use xlink:href="img/icons.svg#to-right" />
-				</svg>
-			</button>
-		</div>
-		<div>
-			<% for(let i=0; i < 6; i++){ %>
-				<div data-tab-content="protfolio-<%= i %>"> </div>
-				<% } %>
-		</div>
-	</section>
-
-	<script>
-		const portfolioSlider = new Swiper('.protfolio-slider .swiper', {
-			slidesPerView: 'auto',
-			// spaceBetween: 20,
-			watchSlidesProgress: true,
-			watchSlidesVisibility: true,
-			navigation: {
-				prevEl: '.protfolio-slider .slider-prev',
-				nextEl: '.protfolio-slider .slider-next'
-			},
-			breakpoints: {
-				[MEDIA_MD]: {
-					// spaceBetween: 30,
-				},
-				[MEDIA_LG]: {
-					// spaceBetween: 30,
-				}
-			}
-		});
-
-		document.addEventListener('tabchange', (event) => {
-			if (!event.detail.cover.closest('.protfolio')) return;
-			const link = event.detail.cover.querySelector('[data-tab-link].tab-active')
-			const cat = link.getAttribute('data-cat')
-			const items = event.detail.cover.querySelectorAll('.-cat-item-')
-			items.forEach(element => {
-
-				const itemCat = element.getAttribute('data-cat')
-
-				if (!cat) {
-					element.style.display = ''
-					setTimeout(() => {
-						element.classList.remove('hidden')
-					});
-					return
-				}
-
-				if (itemCat == cat) {
-					element.style.display = ''
-					setTimeout(() => {
-						element.classList.remove('hidden')
-					});
-				} else {
-					element.classList.add('hidden')
-					setTimeout(() => {
-						element.style.display = 'none'
-					}, 500);
-				}
-
-			});
-
-			setTimeout(() => {
-				portfolioSlider.update()
-			}, 650)
-		})
-	</script>
-	<!-- /Наше портфолио -->
-
-	<!-- Кухня - душа квартиры -->
-	<section class="section section--last citchen">
-		<div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
-			Кухня - душа квартиры</div>
-		<div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp"
-			data-duration="0.6" data-delay="0.8">
-			Мы сделаем ремонт так, чтобы вся семья счасливо
-			проводила здесь время
-		</div>
-
-		<div class="citchen-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
-			<div class="swiper">
-				<div class="swiper-wrapper">
-					<% for(let i=0; i < 3; i++){ %>
-						<div class="swiper-slide">
-							<div class="citchen-item image-action">
-								<div class="citchen-item__img image image--box">
-									<img src="https://picsum.photos/600/400?random=5<%= i %>>" alt="">
-								</div>
-								<div class="citchen-item__content card-bottom-control px-4 pb-6 p-md-8">
-									<div class="text-body-2 text-lg-subtitle-1 text--demibold color-white">Кухня в синих
-										тонах</div>
-									<div class="text-small text-lg-body-2 color-white fade-60">Площадь 36 м2</div>
-								</div>
-							</div>
-						</div>
-						<% } %>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script>
-		new Swiper('.citchen-slider .swiper', {
-			slidesPerView: 1.4,
-			spaceBetween: 20,
-			watchSlidesProgress: true,
-			watchSlidesVisibility: true,
-			breakpoints: {
-				[MEDIA_MD]: {
-					spaceBetween: 20,
-					slidesPerView: 3,
-				},
-				[MEDIA_LG]: {
-					spaceBetween: 30,
-					slidesPerView: 3,
-				}
-			}
-		});
-	</script>
-	<!-- Кухня - душа квартиры -->
-
-	<section class="about">
-		<div class="about__content">
-			<div class="text-h4 text-md-h1 mb-4">
-				<div class=" gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">Мебелирование</div>
-				<div class=" gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">квартиры или дома</div>
-				<div class=" gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="1">под ключ</div>
-			</div>
-			<div class="text-body-1 fade-80 gsap-scroll" data-animation="fadeInUp" data-duration="0.6" data-delay=".5">
-				Быстрый и удобный способ придать помещению
-				стильный и уютный вид. Реализация дизайнерского
-				проекта предполагает не только выполнения
-				ремонтно-строительных работ, но и дальнейшее
-				обустройство жилья
-			</div>
-			<button class="btn btn--primary btn--fill mt-10 gsap-scroll" data-animation="fadeInUp" data-duration="0.6" data-delay=".5">Подробнее</button>
-		</div>
-		<div class="about__img gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
-			<img src="img/about.png" alt="">
-			<div class="about-lamp">
-				<img src="img/lamp.png" alt="">
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Наша мебель -->
-	<section class="section section--first protfolio">
-		<div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">Наша
-			мебель</div>
-		<div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp"
-			data-duration="0.6" data-delay="0.8">
-			Быстрый и удобный способ придать помещению стильный и уютный вид
-		</div>
-
-		<div class="protfolio-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5" id="furniture-slider">
-			<div class="swiper">
-				<div class="swiper-wrapper">
-					<% for(let j=0; j < 8; j++){ %>
-						<div class="swiper-slide -cat-item-" data-cat="1room">
-							<a href="https://picsum.photos/1920/1080?random=3<%= j %>1" data-fancybox="protfolio"
-								class="protfolio-item">
-								<div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
-									<div class="progress progress-circle fade-60 text-body-1"></div>
-									<img src="https://picsum.photos/600/400?random=3<%= j %>1" alt="">
-								</div>
-								<div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
-								<div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
-							</a>
-						</div>
-						<div class="swiper-slide -cat-item-" data-cat="2room">
-							<a href="https://picsum.photos/1920/1080?random=3<%= j %>2" data-fancybox="protfolio"
-								class="protfolio-item">
-								<div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
-									<div class="progress progress-circle fade-60 text-body-1"></div>
-									<img src="https://picsum.photos/600/400?random=3<%= j %>2" alt="">
-								</div>
-								<div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
-								<div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
-							</a>
-						</div>
-						<div class="swiper-slide -cat-item-" data-cat="house">
-							<a href="https://picsum.photos/1920/1080?random=3<%= j %>3" data-fancybox="protfolio"
-								class="protfolio-item">
-								<div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
-									<div class="progress progress-circle fade-60 text-body-1"></div>
-									<img src="https://picsum.photos/600/400?random=3<%= j %>3" alt="">
-								</div>
-								<div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
-								<div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
-							</a>
-						</div>
-						<% } %>
-				</div>
-			</div>
-			<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-prev d-none d-md-flex">
-				<svg class="icon">
-					<use xlink:href="img/icons.svg#to-left" />
-				</svg>
-			</button>
-			<button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-next d-none d-md-flex">
-				<svg class="icon">
-					<use xlink:href="img/icons.svg#to-right" />
-				</svg>
-			</button>
-		</div>
-
-	</section>
-
-	<script>
-		new Swiper('#furniture-slider .swiper', {
-			slidesPerView: 'auto',
-			// spaceBetween: 20,
-			watchSlidesProgress: true,
-			watchSlidesVisibility: true,
-			navigation: {
-				prevEl: '#furniture-slider .slider-prev',
-				nextEl: '#furniture-slider .slider-next'
-			},
-		});
-
-
-	</script>
-	<!-- /Наша мебель -->
-
-	<!-- Акции и скидки -->
-	<section class="section sales">
-		<div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
-			Акции и скидки</div>
-		<div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp"
-			data-duration="0.6" data-delay="0.8">
-			Мы постоянно проводим акции - всё для любимых клиентов!
-		</div>
-
-		<div class="sales-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
-			<div class="swiper">
-				<div class="swiper-wrapper">
-					<% for(let i=0; i < 3; i++){ %>
-						<div class="swiper-slide">
-							<div class="sales-item image-action">
-								<div class="sales-item__img image image--box">
-									<img src="https://picsum.photos/600/400?random=5<%= i %>>" alt="">
-								</div>
-								<div class="sales-item__content card-bottom-control px-4 pb-6 pt-4 p-md-8">
-									<div class="sales-item__shildik mb-auto">
-										<img src="img/fire.png" alt="">
-										Акция
-									</div>
-									<div class="text-body-2 text-lg-subtitle-1 text--demibold color-white mb-1">
-										Евроремонт со скидкой 20% <br>
-										до 30 июня!
-									</div>
-									<div class="text-small text-lg-body-2 color-white fade-60">от простого до
-										дизайнерского</div>
-								</div>
-							</div>
-						</div>
-						<% } %>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script>
-		new Swiper('.sales-slider .swiper', {
-			slidesPerView: 1.4,
-			spaceBetween: 20,
-			watchSlidesProgress: true,
-			watchSlidesVisibility: true,
-			breakpoints: {
-				[MEDIA_MD]: {
-					spaceBetween: 20,
-					slidesPerView: 3,
-				},
-				[MEDIA_LG]: {
-					spaceBetween: 30,
-					slidesPerView: 3,
-				}
-			}
-		});
-	</script>
-	<!-- Акции и скидки -->
-
-	<section class="pray">
-		<div class="pray-block gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
-			<div class="pray__background">
-				<img src="img/background/pray.jpg" alt="">
-			</div>
-			<div class="pray__content">
-				<div class="text-h6 text-md-h1 mb-6">
-					<div class="gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6"> Получите бесплатный
-						расчет </div>
-					<div class="gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8"> стоимости ремонта
-					</div>
-				</div>
-				<div class="pray__list">
-					<ul class="text-ul">
-						<li class="text-ul-item">Прораб приедет в удобное для вас время</li>
-						<li class="text-ul-item">Вы получите подробную смету по почте</li>
-						<li class="text-ul-item">Озвученная цена останется неизменной</li>
-					</ul>
-				</div>
-			</div>
-			<div class="pray__form mx-auto mr-lg-0 ml-lg-auto">
-				<div class="text-h4 text-md-h3 mb-2">Заявка на рассчет</div>
-				<div class="fade-80 mb-6">
-					Оставьте заявку и мы свяжемся с Вами
-					в ближайшее время
-				</div>
-
-				<label class="form-field mb-4">
-					<div class="text--demibold mb-3">Имя</div>
-					<div class="form-input-cover">
-						<input type="text" class="form-input" placeholder="">
-					</div>
-				</label>
-				<label class="form-field">
-					<div class="text--demibold mb-3">Номер телефона</div>
-					<div class="form-input-cover">
-						<input type="tel" class="form-input" placeholder="">
-					</div>
-				</label>
-
-				<button class="btn btn--primary btn--fill mt-5 mt-md-8">Отправить</button>
-				<div class="text-body-2 fade-60 mt-4 mt-md-6">
-					Отправляя форму Вы даете согласие на обработку
-					Ваших персональных данных
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="description section section--first section--last gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
-		<div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
-			Почему компании «Ремонт-Краснодар» доверяют</div>
-		<div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp"
-			data-duration="0.6" data-delay="0.8">
-			У нас ответственные, компетентные и доброжелательные мастера
-		</div>
-
-		<div class="description-item">
-			<div class="description-item__inner text-body-2 text-md-body-1">
-				<div class="text--demibold mb-2">Работы осуществляются опытными и квалифицированными сотрудниками</div>
-				На вашем объекте будут работать квалифицированные мастера: плиточники, сантехники, электрики, штукатуры и
-				другие специалисты. Весь процесс контролируется прорабом,который регулярно посещает объект, за каждый этап
-				работ отчитываясь перед заказчиком.
-			</div>
-		</div>
-		<div class="description-item">
-			<div class="description-item__inner text-body-2 text-md-body-1">
-				<div class="text--demibold mb-2">Сотрудничество по договору</div>
-				После подписания соглашения сумма сметы не подлежит изменению, если с вашей стороны не последует изменений в
-				процессе работ. Вы сможете точно спланировать расходы на оплату услуг компании по ремонту квартир в
-				Краснодаре. На все работы действует двухлетний гарантийный срок.
-			</div>
-		</div>
-
-		<div class="description-collapse" id="description-collapse" data-toggle-height data-toggle-static>
-			<div class="description-item">
-				<div class="description-item__inner text-body-2 text-md-body-1">
-					<div class="text--demibold mb-2">Помогаем снизить затраты</div>
-					Мы плотно сотрудничаем с оптовыми поставщиками и производителями отделочных материалов. Поэтому все
-					необходимое для отделки вашего помещения в Краснодаре вы приобретете с нашей помощью на 10—15% дешевле, чем в
-					розничных сетях. Подробности вы можете уточнить у нашего менеджера.
-				</div>
-			</div>
-			<div class="description-item">
-				<div class="description-item__inner text-body-2 text-md-body-1">
-					<div class="text--demibold mb-2">Работаем без предоплаты</div>
-					Заключив договор на ремонт квартиры в Краснодаре, вы можете оплачивать каждый этап отделки по факту ее
-					выполнения. Приемка работ осуществляется лично, либо на основе фото- или видеоотчета.
-				</div>
-			</div>
-			<div class="description-item">
-				<div class="description-item__inner text-body-2 text-md-body-1">
-					<div class="text--demibold mb-2">Современные технологические решения</div>
-					Компания «Ремонт-Краснодар» реализует любую вашу задумку и выполнит работы любой сложности! В нашем штате
-					работают специалисты, способные выполнить монтаж систем «Умный дом» под ключ.
-				</div>
-			</div>
-			<div class="description-item">
-				<div class="description-item__inner text-body-2 text-md-body-1">
-					<div class="text--demibold mb-2">Оказываем дополнительные услуги</div>
-
-				</div>
-			</div>
-
-
-			<div class="description-info mt-7 mb-7">
-				<div class="description-info__item card">
-					<div class="description-item">
-						<div class="description-item__inner text-body-2 text-md-body-1">
-							Разработка дизайн проектов интерьера;
-						</div>
-					</div>
-					<div class="description-item">
-						<div class="description-item__inner text-body-2 text-md-body-1">
-							Демонтажные работы любой сложности: алмазная резка, бурение;
-						</div>
-					</div>
-					<div class="description-item">
-						<div class="description-item__inner text-body-2 text-md-body-1">
-							Узаканивание перепланировки помещения;
-						</div>
-					</div>
-				</div>
-				<div class="description-info__item card">
-					<div class="description-item">
-						<div class="description-item__inner text-body-2 text-md-body-1">
-							Монтаж систем кондиционирования и вентиляции;
-						</div>
-					</div>
-					<div class="description-item">
-						<div class="description-item__inner text-body-2 text-md-body-1">
-							Остекление балконов, лоджий, витражных окон, террас;
-						</div>
-					</div>
-					<div class="description-item">
-						<div class="description-item__inner text-body-2 text-md-body-1">
-							Изготовление корпусной и мягкой мебели.
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="text-body-2 text-md-body-1 lh-1-5">
-				Наша компания за честное и взаимовыгодное сотрудничество! <b> Мы не нарушаем условия договора, строго
-					придерживаемся сметы, на все материалы предоставляем чеки.</b> Компания «Ремонт-Краснодар» знает, как подойти
-				к
-				ремонту квартиры с максимальной отдачей, при этом сэкономив бюджет клиента и выполнив отделку на высоком уровне
-				качества! Мы ждем ваших звонков по тел. 8 (962) 87-22-227!
-			</div>
-		</div>
-		<button class="btn btn--primary btn--link btn--underline mt-4 d-md-none" data-toggle-link="description-collapse">
-			<span class="active-disabled text-body-2 text--demibold">Читать полностью</span>
-			<span class="active-enabled text-body-2 text--demibold">Скрыть</span>
-		</button>
-	</section>
-
-	<footer class="footer">
-		<img class="footer__lights" src="img/new-year/footer-lights.png" alt="">
-		<button class="footer-logo btn btn--link">
-			<img src="img/logo.svg" alt="">
-		</button>
-		<div class="footer-description text-small fade-60">
-			Компания «Ремонт-Краснодар» предоставляет <br>
-			услуги ремонта квартир, офисов и других помещений в Краснодаре
-		</div>
-		<a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper">
-			<button class="btn btn-small btn--primary btn-icon mr-2">
-				<svg class="icon text-subtitle-1">
-					<use xlink:href="img/icons.svg#email" />
-				</svg>
-			</button>
-			<div class="">
-				<div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
-				<div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
-			</div>
-		</a>
-		<a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper">
-			<button class="btn btn-small btn--primary btn-icon  mr-2">
-				<svg class="icon text-subtitle-1">
-					<use xlink:href="img/icons.svg#phone" />
-				</svg>
-			</button>
-			<div class="">
-				<div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
-				<div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
-			</div>
-		</a>
-	</footer>
-	<footer class="footer-bottom">
-		<div class="footer-bottom__year text-small fade-60">© 2022</div>
-
-		<a href="http://stdkit.ru" target="_blank" class="footer-bottom__dev ml-auto flex flex-align-center">
-			<span class="text-small fade-60 mr-2">Разработка и продвижение</span>
-			<img src="img/stdkit.svg" alt="">
-		</a>
-	</footer>
+  <div class="loader progress-container">
+    <div class="progress progress-circle "></div>
+  </div>
+
+
+  <div class="menu -menu-" id="menu">
+    <div class="menu-header">
+      <button class="header-btn btn btn-xsmall btn-icon btn--primary d-sm-none mr-4" data-toggle-link="menu">
+        <svg class="icon text-subtitle-2">
+          <use xlink:href="img/icons.svg#cross" />
+        </svg>
+      </button>
+      <button class="header-logo btn btn--link">
+        <img src="img/logo.svg" alt="">
+      </button>
+    </div>
+    <div class="menu-content">
+      <div class="py-5 pb-3">
+        <a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
+          Портфолио
+        </a>
+        <a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
+          Мебелирование
+        </a>
+        <a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
+          Акции и скидки
+        </a>
+        <a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
+          О нас
+        </a>
+        <a href="javascipt:;" class="d-block px-4 py-4 waved text-body-1 w-100">
+          Контакты
+        </a>
+
+
+      </div>
+      <div class="px-4 mt-1 mt-auto">
+        <button class="btn btn--primary btn--fill w-100 text-body-2 text--demibold">Получить бесплатный рассчет</button>
+        <button class="btn btn--primary btn--contur mt-4 w-100 text-body-2 text--demibold">Заказать звонок</button>
+      </div>
+      <div class="mt-10 px-4">
+        <a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper">
+          <button class="btn btn-small btn--primary btn-icon mr-2">
+            <svg class="icon text-subtitle-1">
+              <use xlink:href="img/icons.svg#email" />
+            </svg>
+          </button>
+          <div class="">
+            <div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
+            <div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
+          </div>
+        </a>
+        <a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper mt-4">
+          <button class="btn btn-small btn--primary btn-icon  mr-2">
+            <svg class="icon text-subtitle-1">
+              <use xlink:href="img/icons.svg#phone" />
+            </svg>
+          </button>
+          <div class="">
+            <div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
+            <div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="menu-shadow" id="menu-shadow"></div>
+
+  <header class="header">
+    <div class="header-inner gsap-scroll" data-animation="fadeInDown">
+
+      <button class="header-btn btn btn-xsmall btn-icon btn--primary d-sm-none mr-4" data-toggle-link="menu">
+        <svg class="icon text-subtitle-2">
+          <use xlink:href="img/icons.svg#menu" />
+        </svg>
+      </button>
+      <button class="header-logo btn btn--link">
+        <img src="img/logo.svg" alt="">
+      </button>
+      <a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
+        <button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
+          <svg class="icon text-subtitle-1">
+            <use xlink:href="img/icons.svg#email" />
+          </svg>
+          <img class="header-icon icon text-h2" src="img/new-year/colpak.svg" alt="">
+        </button>
+        <div class="d-none d-lg-block">
+          <div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
+          <div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
+        </div>
+      </a>
+      <a href="javascript:;" class="header-contact btn btn--link link-hover-wrapper mr-4 mr-lg-0">
+        <button class="btn btn-small btn--primary btn-icon btn--light mr-lg-4">
+          <svg class="icon text-subtitle-1">
+            <use xlink:href="img/icons.svg#phone" />
+          </svg>
+          <img class="header-icon icon text-h2" src="img/new-year/colpak.svg" alt="">
+        </button>
+        <div class="d-none d-lg-block">
+          <div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
+          <div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
+        </div>
+      </a>
+      <button class="header-btn btn btn-xsmall btn-icon btn--primary btn--contur d-sm-none">
+        <svg class="icon text-body-1">
+          <use xlink:href="img/icons.svg#phone" />
+        </svg>
+      </button>
+      <button class="header-btn btn btn-small btn--primary btn--contur d-none d-sm-flex" data-fancybox-modal data-src="dialog-form.html" data-type="ajax">Заказать звонок</button>
+    </div>
+    <div class="started__lights">
+      <img src="img/new-year/header-lights.svg">
+    </div>
+  </header>
+
+  <section class="started">
+    <div class="started__img">
+      <img src="img/background/started.jpg" alt="" class="gsap-scroll" data-animation="scaleIn" data-duration="2">
+    </div>
+    <div class="started__shadow"></div>
+    <div class="started__content">
+      <div class="started__title mb-3 mb-sm-5">
+        <div class="gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="0.6">Ремонт квартир</div>
+        <div class="gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="0.7">
+          под ключ в Краснодаре
+        </div>
+      </div>
+      <div class="started__subtitle gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="1">с
+        поэтапной оплатой, без предоплат</div>
+      <div class="started__separator gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="1"></div>
+      <div class="started__description gsap-scroll" data-animation="clipInUp" data-duration="0.5" data-delay="1.2">
+        Успейте <img src="img/icons/fire.png" alt="" class="d-inline"> до 31 июля получить скидку 20% <br>
+        До конца акции осталось: 5 дней!
+      </div>
+      <div class="mt-8 gsap-scroll" data-animation="fadeInUp" data-duration="0.5" data-delay="1.4">
+        <button class="started__btn btn btn--primary btn--white-bg">Получить бесплатный расчет</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Получите бесплатный рассчет -->
+  <section class="qwiz section section--first">
+    <div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
+      Получите бесплатный рассчет</div>
+    <div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">Просто ответье на 8 простых вопросов</div>
+
+    <div class="qwiz-block gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay="0.6">
+      <form class="qwiz-content">
+        <input type="hidden" name="form-name" value="Квиз">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide qwiz-form" data-qwiz-slide>
+              <div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+                Где будем делать ремонт?
+              </div>
+              <div class="qwiz-form__fields">
+
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Квартира </div>
+                </label>
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Дом </div>
+                </label>
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Коммерция </div>
+                </label>
+
+              </div>
+              <button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill  mt-auto">
+                Следующий
+                <svg class="icon btn__end">
+                  <use xlink:href="img/icons.svg#arrow-right" />
+                </svg>
+              </button>
+            </div>
+            <div class="swiper-slide qwiz-form" data-qwiz-slide>
+              <div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+                Состояние объекта
+              </div>
+              <div class="qwiz-form__fields">
+
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Новостройка </div>
+                </label>
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Вторичка </div>
+                </label>
+
+              </div>
+              <div class="flex mt-auto">
+                <button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+                  <svg class="icon ">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+                <button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+                  Следующий
+                  <svg class="icon ml-3">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+            <div class="swiper-slide qwiz-form" data-qwiz-slide>
+              <div class="text-subtitle-1 text-md-h4 mb-5">
+                Нужна ли дополнительная
+                комплектация объекта:
+              </div>
+              <div class="qwiz-form__fields">
+                <div class="grid">
+                  <div class="grid-col-sm-6">
+                    <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+                      <input type="checkbox" class="form-input-checkbox">
+                      <div class="form-checkbox-target">
+                        <svg class="icon">
+                          <use xlink:href="./img/icons.svg#gal-ochka" />
+                        </svg>
+                      </div>
+                      <div class="ml-3"> Сантехника </div>
+                    </label>
+                  </div>
+                  <div class="grid-col-sm-6">
+                    <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+                      <input type="checkbox" class="form-input-checkbox">
+                      <div class="form-checkbox-target">
+                        <svg class="icon">
+                          <use xlink:href="./img/icons.svg#gal-ochka" />
+                        </svg>
+                      </div>
+                      <div class="ml-3"> Установка дверей </div>
+                    </label>
+                  </div>
+                  <div class="grid-col-sm-6">
+                    <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+                      <input type="checkbox" class="form-input-checkbox">
+                      <div class="form-checkbox-target">
+                        <svg class="icon">
+                          <use xlink:href="./img/icons.svg#gal-ochka" />
+                        </svg>
+                      </div>
+                      <div class="ml-3"> Электрика </div>
+                    </label>
+                  </div>
+                  <div class="grid-col-sm-6">
+                    <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+                      <input type="checkbox" class="form-input-checkbox">
+                      <div class="form-checkbox-target">
+                        <svg class="icon">
+                          <use xlink:href="./img/icons.svg#gal-ochka" />
+                        </svg>
+                      </div>
+                      <div class="ml-3"> Изготовление кухни </div>
+                    </label>
+                  </div>
+                  <div class="grid-col-sm-6">
+                    <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+                      <input type="checkbox" class="form-input-checkbox">
+                      <div class="form-checkbox-target">
+                        <svg class="icon">
+                          <use xlink:href="./img/icons.svg#gal-ochka" />
+                        </svg>
+                      </div>
+                      <div class="ml-3"> Установка системы <br> "Теплый пол" </div>
+                    </label>
+                  </div>
+                  <div class="grid-col-sm-6">
+                    <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+                      <input type="checkbox" class="form-input-checkbox">
+                      <div class="form-checkbox-target">
+                        <svg class="icon">
+                          <use xlink:href="./img/icons.svg#gal-ochka" />
+                        </svg>
+                      </div>
+                      <div class="ml-3"> Меблирование </div>
+                    </label>
+                  </div>
+                  <div class="grid-col-sm-6">
+                    <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping btn ">
+                      <input type="checkbox" class="form-input-checkbox">
+                      <div class="form-checkbox-target">
+                        <svg class="icon">
+                          <use xlink:href="./img/icons.svg#gal-ochka" />
+                        </svg>
+                      </div>
+                      <div class="ml-3"> Замена окон </div>
+                    </label>
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="flex mt-auto">
+                <button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+                  <svg class="icon ">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+                <button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+                  Следующий
+                  <svg class="icon ml-3">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+            <div class="swiper-slide qwiz-form" data-qwiz-slide>
+              <div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+                Укажите площадь объекта
+              </div>
+              <div class="qwiz-form__fields">
+                <label class="form-field swiper-no-swiping w-sm-75">
+                  <div class="text--demibold mb-3">Площадь объекта, м2</div>
+                  <div class="form-input-cover">
+                    <input type="number" class="form-input" placeholder="Введите цифру...">
+                  </div>
+                </label>
+
+              </div>
+              <div class="flex mt-auto">
+                <button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+                  <svg class="icon ">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+                <button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+                  Следующий
+                  <svg class="icon ml-3">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+            <div class="swiper-slide qwiz-form" data-qwiz-slide>
+              <div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+                Когда готовы приступить к ремонту
+              </div>
+              <div class="qwiz-form__fields">
+
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Как можно скорее </div>
+                </label>
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> В течение месяца </div>
+                </label>
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Через 2-3 месяца </div>
+                </label>
+                <label class="form-field form-checkbox qwiz-form-checkbox swiper-no-swiping mb-3 btn w-sm-50">
+                  <input type="checkbox" class="form-input-checkbox">
+                  <div class="form-checkbox-target">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#gal-ochka" />
+                    </svg>
+                  </div>
+                  <div class="ml-3"> Только прицениваюсь </div>
+                </label>
+
+              </div>
+              <div class="flex mt-auto">
+                <button type="button" class="qwiz-form__btn qwiz-prev btn btn-fab btn--primary btn--light mr-4">
+                  <svg class="icon ">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+                <button type="button" class="qwiz-form__btn qwiz-next btn btn--primary btn--fill">
+                  Следующий
+                  <svg class="icon ml-3">
+                    <use xlink:href="img/icons.svg#arrow-right" />
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+            <div class="swiper-slide qwiz-form" data-qwiz-slide>
+              <div class="text-subtitle-1 text-md-h4 mb-lg-10 mb-8">
+                Последний шаг
+              </div>
+              <div class="qwiz-form__fields">
+                <label class="form-field swiper-no-swiping w-sm-75 mb-4">
+                  <div class="text--demibold mb-3">Имя</div>
+                  <div class="form-input-cover">
+                    <input type="text" class="form-input" placeholder="">
+                  </div>
+                </label>
+                <label class="form-field swiper-no-swiping w-sm-75">
+                  <div class="text--demibold mb-3">Номер телефона</div>
+                  <div class="form-input-cover">
+                    <input type="tel" class="form-input" placeholder="">
+                  </div>
+                </label>
+
+              </div>
+              <div class="flex mt-auto">
+                <button type="button" class="btn btn--primary btn--fill">
+                  Получить рассчет
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </form>
+      <div class="qwiz-img">
+        <div class="swiper" dir="rtl">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+              <div class="progress progress-circle fade-60"></div>
+              <picture>
+                <img data-src="img/qwiz/1.jpg" alt="" class="swiper-lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+              <div class="progress progress-circle fade-60"></div>
+              <picture>
+                <img data-src="img/qwiz/2.jpg" alt="" class="swiper-lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+              <div class="progress progress-circle fade-60"></div>
+              <picture>
+                <img data-src="img/qwiz/3.jpg" alt="" class="swiper-lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+              <div class="progress progress-circle fade-60"></div>
+              <picture>
+                <img data-src="img/qwiz/4.jpg" alt="" class="swiper-lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+              <div class="progress progress-circle fade-60"></div>
+              <picture>
+                <img data-src="img/qwiz/5.jpg" alt="" class="swiper-lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide qwiz-img__item image image--box bg-l1 progress-container">
+              <div class="progress progress-circle fade-60"></div>
+              <picture>
+                <img data-src="img/qwiz/6.jpg" alt="" class="swiper-lazy">
+              </picture>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    (() => {
+      const qwizFormSwiper = new Swiper('.qwiz-content .swiper', {
+        slidesPerView: 1,
+        touchRatio: 0,
+        spaceBetween: 20,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        navigation: {
+          prevEl: '.qwiz-prev',
+          nextEl: '.qwiz-next'
+        },
+        autoHeight: true,
+        breakpoints: {
+          [MEDIA_LG]: {
+            autoHeight: false
+          }
+        }
+      });
+      const qwizImgSwiper = new Swiper('.qwiz-img .swiper', {
+        slidesPerView: 1,
+        lazy: {
+          loadPrevNext: true,
+          loadPrevNextAmount: 1
+        },
+        spaceBetween: 20,
+        touchRatio: 0,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        effect: 'creative',
+        creativeEffect: {
+          prev: {
+            // will set `translateZ(-400px)` on previous slides
+            translate: [0, 0, -400],
+          },
+          next: {
+            // will set `translateX(100%)` on next slides
+            translate: ['100%', 0, 0],
+          },
+        },
+        navigation: {
+          prevEl: '.qwiz-prev',
+          nextEl: '.qwiz-next'
+        },
+
+
+      });
+    })();
+  </script>
+  <!-- /Получите бесплатный рассчет -->
+
+  <!-- Примеры работ -->
+  <section class="section example">
+    <div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
+      Примеры работ</div>
+    <div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">Ознакомьтесь с нашими флагманскими проектами</div>
+
+    <div class="example-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+      <div class="swiper example-slider-swiper">
+        <div class="swiper-wrapper">
+          <% for(let j=0; j < 3; j++){ %>
+          <div class="swiper-slide example-slide">
+            <div class="work-item card">
+              <div class="work-item__previews example-no-swiping">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a data-fancybox="work-item-<%= j %>" href="https://youtu.be/YAmkIt70RtU" class="work-item__preview image image--rect bg-l1 progress-container image-action waved">
+                        <div class="progress progress-circle fade-60"></div>
+                        <img src="img/test.jpg" alt="">
+                        <div class="card-center-control">
+                          <button class="btn btn--primary btn--white-bg btn-fab work-item__preview-play">
+                            <svg class="icon">
+                              <use xlink:href="img/icons.svg#play" />
+                            </svg>
+                          </button>
+                        </div>
+                      </a>
+
+                    </div>
+                    <% for(let i=0; i < 3; i++){ %>
+                    <div class="swiper-slide">
+                      <a data-fancybox="work-item-<%= j %>" href="img/test.jpg" class="work-item__preview image image--rect bg-l1 progress-container image-action waved">
+                        <div class="progress progress-circle fade-60"></div>
+                        <img data-src="img/test.jpg" alt="" class="swiper-lazy">
+                      </a>
+                    </div>
+                    <% } %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work-item__content">
+                <div class="text-md-h4 mb-2 text-subtitle-2">Косметический ремонт квартиры</div>
+                <div class="flex text-small text-md-body-2 mb-6">
+                  <div>ул. Конгрессная 12</div>
+                  <div class="ml-5">
+                    <span class="fade-60">Площадь:</span> 102 м2
+                  </div>
+                  <div class="ml-5">
+                    <span class="fade-60">Срок: </span> 4 мес
+                  </div>
+                </div>
+                <div class="text-body-2 fade-80">
+                  Современный и доступный ремонт квартиры. В отделке использованы современные, но
+                  при
+                  этом не дорогие
+                  материалы и решения: натяжные потолки, декоративная штукатурка, гипсовые панели,
+                  ламинат,
+                  отечественная керамическая плитка.
+                </div>
+                <div class="work-item__thumbs mt-5 mt-lg-9 mb-5 mb-lg-0 example-no-swiping">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="work-item__thumb image image--rect bg-l1 progress-container image-action waved">
+                          <div class="progress progress-circle fade-60 text-small"></div>
+                          <img src="img/test.jpg" alt="">
+                          <div class="card-center-control">
+                            <button class="btn btn--primary btn--white-bg btn-fab work-item__thumb-play">
+                              <svg class="icon">
+                                <use xlink:href="img/icons.svg#play" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <% for(let i=0; i < 3; i++){ %>
+                      <div class="swiper-slide">
+                        <div class="work-item__thumb image image--rect bg-l1 progress-container image-action waved">
+                          <div class="progress progress-circle fade-60 text-small">
+                          </div>
+                          <img src="img/test.jpg" alt="">
+                        </div>
+                      </div>
+                      <% } %>
+                    </div>
+                  </div>
+                </div>
+                <button class="work-item__btn btn btn--primary btn--fill px-md-10 mt-7 mt-md-10 example-no-swiping" data-fancybox-modal data-src="dialog-work.html" data-type="ajax">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+
+      </div>
+      <div class="example-slider-nav">
+        <button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-prev example-prev">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#to-left" />
+          </svg>
+        </button>
+        <div class="slider-pagination mx-auto "></div>
+        <button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-next example-next">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#to-right" />
+          </svg>
+        </button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <script>
+    const example = new Swiper('.example-slider-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      // slideClass: 'example-slide',
+      noSwipingClass: 'example-no-swiping',
+      effect: 'creative',
+      speed: 500,
+      // loop: true,
+      creativeEffect: {
+        prev: {
+          translate: [0, 0, -400],
+        },
+        next: {
+          translate: ['110%', 0, 0],
+        },
+      },
+      navigation: {
+        prevEl: '.example-prev',
+        nextEl: '.example-next',
+      },
+      pagination: {
+        el: '.example-slider .slider-pagination',
+        clickable: true,
+      }
+    });
+
+    const items = document.querySelectorAll('.example .work-item')
+    items.forEach(element => {
+      const thumbs = new Swiper(element.querySelector('.work-item__thumbs .swiper'), {
+        slidesPerView: 4,
+        spaceBetween: 12,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        breakpoints: {
+          [MEDIA_MD]: {
+            spaceBetween: 20,
+          }
+        }
+      });
+      const slider = new Swiper(element.querySelector('.work-item__previews .swiper'), {
+        slidesPerView: 1,
+        lazy: {
+          loadPrevNext: true,
+          loadPrevNextAmount: 1
+        },
+        spaceBetween: 20,
+        // touchRatio: 0,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        effect: 'creative',
+        thumbs: {
+          swiper: thumbs
+        },
+        creativeEffect: {
+          prev: {
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ['110%', 0, 0],
+          },
+        },
+      });
+
+
+
+    });
+  </script>
+  <!-- /Примеры работ -->
+
+  <!-- Наше портфолио -->
+  <section class="section protfolio" data-tab-cover>
+    <div class="text-h4 text-md-h1 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">Наше портфолио</div>
+    <div class="tabs mb-7 mb-md-10 gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+      <button class="tabs-item" data-tab-link="protfolio-0">Все работы </button>
+      <button class="tabs-item" data-tab-link="protfolio-1" data-cat="1room">Однокомнатные </button>
+      <button class="tabs-item" data-tab-link="protfolio-2" data-cat="2room">Двухкомнатные </button>
+      <button class="tabs-item" data-tab-link="protfolio-3" data-cat="3room">Трехкомнатные </button>
+      <button class="tabs-item" data-tab-link="protfolio-4" data-cat="house">Дома и коттеджи </button>
+      <button class="tabs-item" data-tab-link="protfolio-5" data-cat="commercial">Коммерческие помещения</button>
+      <div class="tabs-plate" data-tab-plate></div>
+    </div>
+    <div class="protfolio-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <% for(let j=0; j < 8; j++){ %>
+          <div class="swiper-slide -cat-item-" data-cat="1room">
+            <a href="img/test.jpg" data-fancybox="protfolio" class="protfolio-item">
+              <div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
+                <div class="progress progress-circle fade-60 text-body-1"></div>
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
+              <div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
+            </a>
+          </div>
+          <div class="swiper-slide -cat-item-" data-cat="2room">
+            <a href="img/test.jpg" data-fancybox="protfolio" class="protfolio-item">
+              <div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
+                <div class="progress progress-circle fade-60 text-body-1"></div>
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
+              <div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
+            </a>
+          </div>
+          <div class="swiper-slide -cat-item-" data-cat="house">
+            <a href="img/test.jpg" data-fancybox="protfolio" class="protfolio-item">
+              <div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
+                <div class="progress progress-circle fade-60 text-body-1"></div>
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
+              <div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
+            </a>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-prev d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-next d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+    <div>
+      <% for(let i=0; i < 6; i++){ %>
+      <div data-tab-content="protfolio-<%= i %>"> </div>
+      <% } %>
+    </div>
+  </section>
+
+  <script>
+    const portfolioSlider = new Swiper('.protfolio-slider .swiper', {
+      slidesPerView: 'auto',
+      // spaceBetween: 20,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      navigation: {
+        prevEl: '.protfolio-slider .slider-prev',
+        nextEl: '.protfolio-slider .slider-next'
+      },
+      breakpoints: {
+        [MEDIA_MD]: {
+          // spaceBetween: 30,
+        },
+        [MEDIA_LG]: {
+          // spaceBetween: 30,
+        }
+      }
+    });
+
+    document.addEventListener('tabchange', (event) => {
+      if (!event.detail.cover.closest('.protfolio')) return;
+      const link = event.detail.cover.querySelector('[data-tab-link].tab-active')
+      const cat = link.getAttribute('data-cat')
+      const items = event.detail.cover.querySelectorAll('.-cat-item-')
+      items.forEach(element => {
+
+        const itemCat = element.getAttribute('data-cat')
+
+        if (!cat) {
+          element.style.display = ''
+          setTimeout(() => {
+            element.classList.remove('hidden')
+          });
+          return
+        }
+
+        if (itemCat == cat) {
+          element.style.display = ''
+          setTimeout(() => {
+            element.classList.remove('hidden')
+          });
+        } else {
+          element.classList.add('hidden')
+          setTimeout(() => {
+            element.style.display = 'none'
+          }, 500);
+        }
+
+      });
+
+      setTimeout(() => {
+        portfolioSlider.update()
+      }, 650)
+    })
+  </script>
+  <!-- /Наше портфолио -->
+
+  <!-- Кухня - душа квартиры -->
+  <section class="section section--last citchen">
+    <div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
+      Кухня - душа квартиры</div>
+    <div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">
+      Мы сделаем ремонт так, чтобы вся семья счасливо
+      проводила здесь время
+    </div>
+
+    <div class="citchen-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <% for(let i=0; i < 3; i++){ %>
+          <div class="swiper-slide">
+            <div class="citchen-item image-action">
+              <div class="citchen-item__img image image--box">
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="citchen-item__content card-bottom-control px-4 pb-6 p-md-8">
+                <div class="text-body-2 text-lg-subtitle-1 text--demibold color-white">Кухня в синих
+                  тонах</div>
+                <div class="text-small text-lg-body-2 color-white fade-60">Площадь 36 м2</div>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Swiper('.citchen-slider .swiper', {
+      slidesPerView: 1.4,
+      spaceBetween: 20,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      breakpoints: {
+        [MEDIA_MD]: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        [MEDIA_LG]: {
+          spaceBetween: 30,
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
+  <!-- Кухня - душа квартиры -->
+
+  <section class="about">
+    <div class="about__content">
+      <div class="text-h4 text-md-h1 mb-4">
+        <div class=" gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">Мебелирование</div>
+        <div class=" gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">квартиры или дома</div>
+        <div class=" gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="1">под ключ</div>
+      </div>
+      <div class="text-body-1 fade-80 gsap-scroll" data-animation="fadeInUp" data-duration="0.6" data-delay=".5">
+        Быстрый и удобный способ придать помещению
+        стильный и уютный вид. Реализация дизайнерского
+        проекта предполагает не только выполнения
+        ремонтно-строительных работ, но и дальнейшее
+        обустройство жилья
+      </div>
+      <button class="btn btn--primary btn--fill mt-10 gsap-scroll" data-animation="fadeInUp" data-duration="0.6" data-delay=".5">Подробнее</button>
+    </div>
+    <div class="about__img gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+      <img src="img/about.png" alt="">
+      <div class="about-lamp">
+        <img src="img/lamp.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Наша мебель -->
+  <section class="section section--first protfolio">
+    <div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">Наша
+      мебель</div>
+    <div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">
+      Быстрый и удобный способ придать помещению стильный и уютный вид
+    </div>
+
+    <div class="protfolio-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5" id="furniture-slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <% for(let j=0; j < 8; j++){ %>
+          <div class="swiper-slide -cat-item-" data-cat="1room">
+            <a href="img/test.jpg" data-fancybox="protfolio" class="protfolio-item">
+              <div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
+                <div class="progress progress-circle fade-60 text-body-1"></div>
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
+              <div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
+            </a>
+          </div>
+          <div class="swiper-slide -cat-item-" data-cat="2room">
+            <a href="img/test.jpg" data-fancybox="protfolio" class="protfolio-item">
+              <div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
+                <div class="progress progress-circle fade-60 text-body-1"></div>
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
+              <div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
+            </a>
+          </div>
+          <div class="swiper-slide -cat-item-" data-cat="house">
+            <a href="img/test.jpg" data-fancybox="protfolio" class="protfolio-item">
+              <div class="protfolio-item__img image image--box image-action progress-container bg-l1 mb-3 mb-md-4">
+                <div class="progress progress-circle fade-60 text-body-1"></div>
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="text-body-2 text-md-body-1 text--demibold mb-1">ул. Гаражная 87</div>
+              <div class="text-small-1 text-md-body-2 fade-60">3-ком. квартира, 105 м2</div>
+            </a>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-prev d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn btn btn--primary btn--white-bg btn-fab slider-next d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+
+  </section>
+
+  <script>
+    new Swiper('#furniture-slider .swiper', {
+      slidesPerView: 'auto',
+      // spaceBetween: 20,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      navigation: {
+        prevEl: '#furniture-slider .slider-prev',
+        nextEl: '#furniture-slider .slider-next'
+      },
+    });
+  </script>
+  <!-- /Наша мебель -->
+
+  <!-- Акции и скидки -->
+  <section class="section sales">
+    <div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
+      Акции и скидки</div>
+    <div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">
+      Мы постоянно проводим акции - всё для любимых клиентов!
+    </div>
+
+    <div class="sales-slider slider slider--overwrap gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <% for(let i=0; i < 3; i++){ %>
+          <div class="swiper-slide">
+            <div class="sales-item image-action">
+              <div class="sales-item__img image image--box">
+                <img src="img/test.jpg" alt="">
+              </div>
+              <div class="sales-item__content card-bottom-control px-4 pb-6 pt-4 p-md-8">
+                <div class="sales-item__shildik mb-auto">
+                  <img src="img/fire.png" alt="">
+                  Акция
+                </div>
+                <div class="text-body-2 text-lg-subtitle-1 text--demibold color-white mb-1">
+                  Евроремонт со скидкой 20% <br>
+                  до 30 июня!
+                </div>
+                <div class="text-small text-lg-body-2 color-white fade-60">от простого до
+                  дизайнерского</div>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Swiper('.sales-slider .swiper', {
+      slidesPerView: 1.4,
+      spaceBetween: 20,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      breakpoints: {
+        [MEDIA_MD]: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        [MEDIA_LG]: {
+          spaceBetween: 30,
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
+  <!-- Акции и скидки -->
+
+  <section class="pray">
+    <div class="pray-block gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+      <div class="pray__background">
+        <img src="img/background/pray.jpg" alt="">
+      </div>
+      <div class="pray__content">
+        <div class="text-h6 text-md-h1 mb-6">
+          <div class="gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6"> Получите бесплатный
+            расчет </div>
+          <div class="gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8"> стоимости ремонта
+          </div>
+        </div>
+        <div class="pray__list">
+          <ul class="text-ul">
+            <li class="text-ul-item">Прораб приедет в удобное для вас время</li>
+            <li class="text-ul-item">Вы получите подробную смету по почте</li>
+            <li class="text-ul-item">Озвученная цена останется неизменной</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pray__form mx-auto mr-lg-0 ml-lg-auto">
+        <div class="text-h4 text-md-h3 mb-2">Заявка на рассчет</div>
+        <div class="fade-80 mb-6">
+          Оставьте заявку и мы свяжемся с Вами
+          в ближайшее время
+        </div>
+
+        <label class="form-field mb-4">
+          <div class="text--demibold mb-3">Имя</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" placeholder="">
+          </div>
+        </label>
+        <label class="form-field">
+          <div class="text--demibold mb-3">Номер телефона</div>
+          <div class="form-input-cover">
+            <input type="tel" class="form-input" placeholder="">
+          </div>
+        </label>
+
+        <button class="btn btn--primary btn--fill mt-5 mt-md-8">Отправить</button>
+        <div class="text-body-2 fade-60 mt-4 mt-md-6">
+          Отправляя форму Вы даете согласие на обработку
+          Ваших персональных данных
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="description section section--first section--last gsap-scroll" data-animation="fadeIn" data-duration="0.6" data-delay=".5">
+    <div class="text-h4 text-md-h1 mb-1 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.6">
+      Почему компании «Ремонт-Краснодар» доверяют</div>
+    <div class="text-body-2 text-sm-body-1 fade-80 mb-5 mb-md-10 gsap-scroll" data-animation="clipInUp" data-duration="0.6" data-delay="0.8">
+      У нас ответственные, компетентные и доброжелательные мастера
+    </div>
+
+    <div class="description-item">
+      <div class="description-item__inner text-body-2 text-md-body-1">
+        <div class="text--demibold mb-2">Работы осуществляются опытными и квалифицированными сотрудниками</div>
+        На вашем объекте будут работать квалифицированные мастера: плиточники, сантехники, электрики, штукатуры и
+        другие специалисты. Весь процесс контролируется прорабом,который регулярно посещает объект, за каждый этап
+        работ отчитываясь перед заказчиком.
+      </div>
+    </div>
+    <div class="description-item">
+      <div class="description-item__inner text-body-2 text-md-body-1">
+        <div class="text--demibold mb-2">Сотрудничество по договору</div>
+        После подписания соглашения сумма сметы не подлежит изменению, если с вашей стороны не последует изменений в
+        процессе работ. Вы сможете точно спланировать расходы на оплату услуг компании по ремонту квартир в
+        Краснодаре. На все работы действует двухлетний гарантийный срок.
+      </div>
+    </div>
+
+    <div class="description-collapse" id="description-collapse" data-toggle-height data-toggle-static>
+      <div class="description-item">
+        <div class="description-item__inner text-body-2 text-md-body-1">
+          <div class="text--demibold mb-2">Помогаем снизить затраты</div>
+          Мы плотно сотрудничаем с оптовыми поставщиками и производителями отделочных материалов. Поэтому все
+          необходимое для отделки вашего помещения в Краснодаре вы приобретете с нашей помощью на 10—15% дешевле, чем в
+          розничных сетях. Подробности вы можете уточнить у нашего менеджера.
+        </div>
+      </div>
+      <div class="description-item">
+        <div class="description-item__inner text-body-2 text-md-body-1">
+          <div class="text--demibold mb-2">Работаем без предоплаты</div>
+          Заключив договор на ремонт квартиры в Краснодаре, вы можете оплачивать каждый этап отделки по факту ее
+          выполнения. Приемка работ осуществляется лично, либо на основе фото- или видеоотчета.
+        </div>
+      </div>
+      <div class="description-item">
+        <div class="description-item__inner text-body-2 text-md-body-1">
+          <div class="text--demibold mb-2">Современные технологические решения</div>
+          Компания «Ремонт-Краснодар» реализует любую вашу задумку и выполнит работы любой сложности! В нашем штате
+          работают специалисты, способные выполнить монтаж систем «Умный дом» под ключ.
+        </div>
+      </div>
+      <div class="description-item">
+        <div class="description-item__inner text-body-2 text-md-body-1">
+          <div class="text--demibold mb-2">Оказываем дополнительные услуги</div>
+
+        </div>
+      </div>
+
+
+      <div class="description-info mt-7 mb-7">
+        <div class="description-info__item card">
+          <div class="description-item">
+            <div class="description-item__inner text-body-2 text-md-body-1">
+              Разработка дизайн проектов интерьера;
+            </div>
+          </div>
+          <div class="description-item">
+            <div class="description-item__inner text-body-2 text-md-body-1">
+              Демонтажные работы любой сложности: алмазная резка, бурение;
+            </div>
+          </div>
+          <div class="description-item">
+            <div class="description-item__inner text-body-2 text-md-body-1">
+              Узаканивание перепланировки помещения;
+            </div>
+          </div>
+        </div>
+        <div class="description-info__item card">
+          <div class="description-item">
+            <div class="description-item__inner text-body-2 text-md-body-1">
+              Монтаж систем кондиционирования и вентиляции;
+            </div>
+          </div>
+          <div class="description-item">
+            <div class="description-item__inner text-body-2 text-md-body-1">
+              Остекление балконов, лоджий, витражных окон, террас;
+            </div>
+          </div>
+          <div class="description-item">
+            <div class="description-item__inner text-body-2 text-md-body-1">
+              Изготовление корпусной и мягкой мебели.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-body-2 text-md-body-1 lh-1-5">
+        Наша компания за честное и взаимовыгодное сотрудничество! <b> Мы не нарушаем условия договора, строго
+          придерживаемся сметы, на все материалы предоставляем чеки.</b> Компания «Ремонт-Краснодар» знает, как подойти
+        к
+        ремонту квартиры с максимальной отдачей, при этом сэкономив бюджет клиента и выполнив отделку на высоком уровне
+        качества! Мы ждем ваших звонков по тел. 8 (962) 87-22-227!
+      </div>
+    </div>
+    <button class="btn btn--primary btn--link btn--underline mt-4 d-md-none" data-toggle-link="description-collapse">
+      <span class="active-disabled text-body-2 text--demibold">Читать полностью</span>
+      <span class="active-enabled text-body-2 text--demibold">Скрыть</span>
+    </button>
+  </section>
+
+  <footer class="footer">
+    <img class="footer__lights" src="img/new-year/footer-lights.png" alt="">
+    <button class="footer-logo btn btn--link">
+      <img src="img/logo.svg" alt="">
+    </button>
+    <div class="footer-description text-small fade-60">
+      Компания «Ремонт-Краснодар» предоставляет <br>
+      услуги ремонта квартир, офисов и других помещений в Краснодаре
+    </div>
+    <a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper">
+      <button class="btn btn-small btn--primary btn-icon mr-2">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#email" />
+        </svg>
+      </button>
+      <div class="">
+        <div class="text--medium lh-1 link-hover">krd-remont23@yandex.ru</div>
+        <div class="text-body-1 fade-60 lh-1">Пишите по всем вопросам</div>
+      </div>
+    </a>
+    <a href="javascript:;" class="footer-contact btn btn--link link-hover-wrapper">
+      <button class="btn btn-small btn--primary btn-icon  mr-2">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#phone" />
+        </svg>
+      </button>
+      <div class="">
+        <div class="text--medium lh-1 link-hover">8 (962) 87-22-227</div>
+        <div class="text-body-1 fade-60 lh-1">Ежедневно с 09:00 до 22:00</div>
+      </div>
+    </a>
+  </footer>
+  <footer class="footer-bottom">
+    <div class="footer-bottom__year text-small fade-60">© 2022</div>
+
+    <a href="http://stdkit.ru" target="_blank" class="footer-bottom__dev ml-auto flex flex-align-center">
+      <span class="text-small fade-60 mr-2">Разработка и продвижение</span>
+      <img src="img/stdkit.svg" alt="">
+    </a>
+  </footer>
 </body>
+
 </html>
